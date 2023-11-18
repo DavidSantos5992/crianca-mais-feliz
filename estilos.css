@@ -19,9 +19,6 @@ input[type="checkbox"]:focus {
   outline: none;
 }
 
-.banner-1 {
-  background-image: url(https://storage.googleapis.com/pai-images/126fe9983dfd488289a07a8614009d3a.jpeg);
-}
 
 .banners {
   width: 100%;
@@ -37,12 +34,16 @@ input[type="checkbox"]:focus {
   background: #8e8d8da8 !important;
 }
 
+.banner-1 {
+  background-image: url(https://storage.googleapis.com/pai-images/51a3f1aec9f94d68878d4da17688f4aa.png);
+}
+
 .banner-2 {
   background-image: url(https://storage.googleapis.com/pai-images/126fe9983dfd488289a07a8614009d3a.jpeg);
 }
 
 .banner-3 {
-  background-image: url(hhttps://storage.googleapis.com/pai-images/126fe9983dfd488289a07a8614009d3a.jpeg);
+  background-image: url(https://storage.googleapis.com/pai-images/51a3f1aec9f94d68878d4da17688f4aa.png);
 }
 
 .banners {
