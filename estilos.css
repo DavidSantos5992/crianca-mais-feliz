@@ -20,9 +20,9 @@ input[type="checkbox"]:focus {
 }
 
 .banner-1 {
-  background-image: url(assets/banner-1.png);
-  object-fit: cover;
-
+  background-image: url(assets/ABRAPA_LOGO.jpg);
+  object-fit: cover !important;
+  background-attachment: fixed !important;
 }
 
 .banners {
@@ -41,12 +41,12 @@ input[type="checkbox"]:focus {
 
 .banner-2 {
   background-image: url(assets/banner-2.png);
-  object-fit: cover;
+  object-fit: cover !important;
 }
 
 .banner-3 {
   background-image: url(assets/banner-1.png);
-  object-fit: cover;
+    background-attachment: fixed !important;
 
 }
 
