@@ -19,6 +19,9 @@ input[type="checkbox"]:focus {
   outline: none;
 }
 
+.banner-1 {
+  background-image: url(assets/banner-1.png)
+}
 
 .banners {
   width: 100%;
@@ -34,19 +37,12 @@ input[type="checkbox"]:focus {
   background: #8e8d8da8 !important;
 }
 
-.banner-1 {
-  background: rgb(3, 84, 189);
-  background: linear-gradient(180deg, rgba(3, 84, 189, 1) 13%, rgba(0, 96, 219, 0.5551470588235294) 50%, rgba(0, 111, 255, 0.12657563025210083) 92%);
-}
-
 .banner-2 {
-  background: rgb(3, 84, 189);
-  background: linear-gradient(180deg, rgba(3, 84, 189, 1) 13%, rgba(0, 96, 219, 0.5551470588235294) 50%, rgba(0, 111, 255, 0.12657563025210083) 92%);
+  background-image: url(assets/banner-2.png)
 }
 
 .banner-3 {
-  background: rgb(3, 84, 189);
-  background: linear-gradient(180deg, rgba(3, 84, 189, 1) 13%, rgba(0, 96, 219, 0.5551470588235294) 50%, rgba(0, 111, 255, 0.12657563025210083) 92%);
+  background-image: url(assets/banner-1.png)
 }
 
 .banners {
