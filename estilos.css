@@ -35,15 +35,18 @@ input[type="checkbox"]:focus {
 }
 
 .banner-1 {
-  background-image: url(https://storage.googleapis.com/pai-images/51a3f1aec9f94d68878d4da17688f4aa.png);
+  background: rgb(3, 84, 189);
+  background: linear-gradient(180deg, rgba(3, 84, 189, 1) 13%, rgba(0, 96, 219, 0.5551470588235294) 50%, rgba(0, 111, 255, 0.12657563025210083) 92%);
 }
 
 .banner-2 {
-  background-image: url(https://storage.googleapis.com/pai-images/126fe9983dfd488289a07a8614009d3a.jpeg);
+  background: rgb(3, 84, 189);
+  background: linear-gradient(180deg, rgba(3, 84, 189, 1) 13%, rgba(0, 96, 219, 0.5551470588235294) 50%, rgba(0, 111, 255, 0.12657563025210083) 92%);
 }
 
 .banner-3 {
-  background-image: url(https://storage.googleapis.com/pai-images/51a3f1aec9f94d68878d4da17688f4aa.png);
+  background: rgb(3, 84, 189);
+  background: linear-gradient(180deg, rgba(3, 84, 189, 1) 13%, rgba(0, 96, 219, 0.5551470588235294) 50%, rgba(0, 111, 255, 0.12657563025210083) 92%);
 }
 
 .banners {
