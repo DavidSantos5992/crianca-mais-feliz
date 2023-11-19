@@ -3,6 +3,7 @@ body {
   --marrom-escuro: #45777e;
   --marrom-claro: #63a9b2;
   font-family: 'Barlow', sans-serif;
+  overflow-x: hidden;
 
 }
 
@@ -19,7 +20,6 @@ input[type="checkbox"]:focus {
   outline: none;
 }
 
-
 .banners {
   width: 100%;
   height: 100vh;
@@ -34,16 +34,23 @@ input[type="checkbox"]:focus {
   background: #8e8d8da8 !important;
 }
 
-.banner-1 {
+.banner-1,
+.banner-2
+ {
   width: 100vw;
   height: 100%;
   top: 0;
+  background-attachment: fixed;
+
 }
 
-.banner-1 img {
+.banner-1 img,
+.banner-2 img
+ {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-attachment: fixed;
 }
 
 .z-1 {
@@ -54,11 +61,6 @@ input[type="checkbox"]:focus {
   z-index: 2 !important;
 }
 
-
-.banner-2 {
-  background-image: url(assets/banner-2.png);
-  object-fit: cover !important;
-}
 
 .banner-3 {
   background-image: url(assets/banner-1.png);
