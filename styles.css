@@ -4,7 +4,7 @@ body {
   --marrom-claro: #63a9b2;
   font-family: 'Barlow', sans-serif;
   overflow-x: hidden;
-/* teste */
+  /* teste */
 }
 
 input[type=checkbox] {
@@ -36,8 +36,7 @@ input[type="checkbox"]:focus {
 
 .banner-1,
 .banner-2,
-.banner-3 
- {
+.banner-3 {
   width: 100vw;
   height: 100%;
   top: 0;
@@ -47,8 +46,7 @@ input[type="checkbox"]:focus {
 
 .banner-1 img,
 .banner-2 img,
-.banner-3 img
- {
+.banner-3 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -109,4 +107,17 @@ footer {
 .logoMd {
   width: 255px;
   height: 80px;
+}
+
+.wpp {
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+  z-index: 999;
+  /* background-color: red; */
+}
+
+.wpp img {
+  width: 70px;
+  height: 70px;
 }
