@@ -1,0 +1,24 @@
+{
+  "name": "ACF - Associação Criança Mais Feliz",
+  "short_name": "ACF",
+  "description": "A Associação Criança Mais Feliz (ACF) é uma ONG filantrópica fundada em 2019, dedicada a ajudar crianças e suas famílias em situação de vulnerabilidade social.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#01EDDA",
+  "theme_color": "#01EDDA",
+  "orientation": "portrait-primary",
+  "categories": ["charity", "social"],
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/assets/favicon_io/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon_io/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

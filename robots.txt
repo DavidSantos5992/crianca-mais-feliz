@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /.well-known/
+Disallow: /assets/campanhas_realizadas/
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://associacaocriancamaisfeliz.com.br/sitemap.xml
+
+# Segurança - bloquear bots maliciosos
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

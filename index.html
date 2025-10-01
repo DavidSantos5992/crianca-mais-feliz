@@ -5,8 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./" type="image/x-icon">
-  <link rel="shortcut icon" href="./assets/favicon_io/favicon-32x32.png" type="image/x-icon">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://ajax.googleapis.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  
+  <link rel="shortcut icon" href="./assets/favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="./assets/favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.json">
   <meta name="google-site-verification" content="QzHSAyTDAhIrULLXtg6PJZCXY36prW7drb8F4r6hREw" />
   <title>ACF - ASSOCIACAO CRIANCA MAIS FELIZ</title>
 
@@ -125,7 +136,7 @@
           <div class="card-body">
             <h5 class="card-title py-2 fw-bold">Rifa Solidária</h5>
             <p class="card-text">Todo valor arrecadado sera usado para comprar a alimentações das nossas crianças</p>
-            <a href="https://criarifa.com/IBWIPs" target="_blank" class="btn botao-padrao w-100 fw-bold">Doar</a>
+            <a href="https://criarifa.com/IBWIPs" target="_blank" rel="noopener noreferrer" class="btn botao-padrao w-100 fw-bold">Doar</a>
           </div>
         </div>
 
@@ -171,7 +182,7 @@
               <h5 class="card-title py-2 fw-bold text-center">Campanha de inverno</h5>
               <p class="card-text">A ONG ACF está arrecadando roupas e cobertores para as famílias que
                 necessitam do apoio.</p>
-              <a target="_blank"
+              <a target="_blank" rel="noopener noreferrer"
                 href="https://api.whatsapp.com/send/?phone=5511918596727&text=Vim+pelo+site%2C+gostaria+de+conhecer+melhor+a+campanha&type=phone_number&app_absent=0"
                 class="btn botao-padrao w-100 fw-bold">Colaborar com a campanha</a>
             </div>
@@ -306,7 +317,7 @@
           <img src="assets/campanhas_realizadas/mc_dia_feliz/entrega6.jpg" alt="Entrega MC Dia Feliz 2025" class="w-100 mb-2">
         </div>
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/associacaocriancamais/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/associacaocriancamais/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
         </div>
       </div>
@@ -508,12 +519,14 @@
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
-                onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=R.+Profa.+Hilda+Marques,+52+-+Vila+Cristo+Redentor,+Jundiaí+-+SP,+13203-200', '_blank')">
+                sandbox="allow-scripts allow-same-origin"
+                title="Localização da ACF - Associação Criança Mais Feliz">
               </iframe>
             </div>
             <div class="text-center mt-3">
               <a href="https://www.google.com/maps/dir/?api=1&destination=R.+Profa.+Hilda+Marques,+52+-+Vila+Cristo+Redentor,+Jundiaí+-+SP,+13203-200" 
                  target="_blank" 
+                 rel="noopener noreferrer"
                  class="btn botao-padrao">
                 <i class="bi bi-geo-alt-fill me-2"></i>Abrir no GPS
               </a>
@@ -525,14 +538,14 @@
 
     <footer class="text-center">
       <section class="container p-4 pb-0 mb-4">
-        <a class="btn" target="_blank"
+        <a class="btn" target="_blank" rel="noopener noreferrer"
           href="https://wa.me/5511918596727?text=Vim%20pelo%20site,%20gostaria%20de%20conhecer%20melhor%20o%20projeto"><i
             class="bi bi-whatsapp fs-5"></i></a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/associacaocriancamais/"><i
+        <a class="btn" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/associacaocriancamais/"><i
             class="bi bi-instagram fs-5"></i></a>
       </section>
       <div class="p-3">
-        2024 <i class="bi bi-c-circle"></i> Desenvolvido por: <a href="https://www.astrocode.com.br/" target="_blank"
+        2024 <i class="bi bi-c-circle"></i> Desenvolvido por: <a href="https://www.astrocode.com.br/" target="_blank" rel="noopener noreferrer"
           style="text-decoration: none;">Astro Code</a>
       </div>
 
@@ -697,7 +710,7 @@
           <img src="assets/natal/presentes natal.jpeg" class="w-100">
         </div>
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/C1DY6hAMRlQ/?img_index=1" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/C1DY6hAMRlQ/?img_index=1" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
         </div>
       </div>
@@ -717,7 +730,7 @@
 
         </div>
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/CuUnplDOxuI/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/CuUnplDOxuI/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
 
         </div>
@@ -739,7 +752,7 @@
           <img src="assets/contra fome/contra-fome.png" class="w-100">
         </div>
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/ChxRWJBumsl/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/ChxRWJBumsl/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
 
         </div>
@@ -759,7 +772,7 @@
           <img src="assets/dia_das_crianças/dia_das_crianças.png" class="w-100">
         </div>
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/CXdvzi9Lis9/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/CXdvzi9Lis9/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
         </div>
       </div>
@@ -819,7 +832,7 @@
         </div>
 
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/C-GjGd7P9c6/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/C-GjGd7P9c6/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
 
         </div>
@@ -878,7 +891,7 @@
         </div>
 
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/DBCMgeAv5tl/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/DBCMgeAv5tl/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
 
         </div>
@@ -920,7 +933,7 @@
         </div>
 
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/DD4jxukJVlf/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/DD4jxukJVlf/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
 
         </div>
@@ -960,7 +973,7 @@
 
       
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/DIosajjpeJT/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/DIosajjpeJT/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
 
         </div>
@@ -996,7 +1009,7 @@
        
       
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/DLNPb_KuMa1/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/DLNPb_KuMa1/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
 
         </div>
@@ -1052,7 +1065,7 @@
        
       
         <div class="modal-footer mx-auto">
-          <a target="_blank" href="https://www.instagram.com/p/DLNPb_KuMa1/" type="button"
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/DLNPb_KuMa1/" type="button"
             class="btn btn-secondary botao-padrao border-0">Ver Mais</a>
 
         </div>
@@ -1061,7 +1074,7 @@
   </div>
 
 
-  <a class="wpp" target="_blank"
+  <a class="wpp" target="_blank" rel="noopener noreferrer"
     href="https://wa.me/5511918596727?text=Vim%20pelo%20site,%20gostaria%20de%20conhecer%20melhor%20o%20projeto">
     <img src="assets/wpp_logo.png" alt="logoWpp">
   </a>
@@ -1072,26 +1085,53 @@
     crossorigin="anonymous"></script>
   <script src="./script.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
   <script>
     $(document).ready(function () {
-      $("#btnColaborar").click(function () {
-        // Copiar o PIX para a área de transferência
+      $("#btnColaborar").click(function (e) {
+        e.preventDefault();
+        // Copiar o PIX para a área de transferência de forma segura
         var pix = "34.863.177/0001-33";
-        navigator.clipboard.writeText(pix);
-
-        // Mostrar o modal
-        $("#pixModal").modal('show');
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(pix).then(function() {
+            // Mostrar o modal
+            $("#pixModal").modal('show');
+          }).catch(function(err) {
+            console.error('Erro ao copiar PIX:', err);
+            // Fallback - mostrar modal mesmo se não conseguir copiar
+            $("#pixModal").modal('show');
+          });
+        } else {
+          // Fallback para navegadores sem suporte ao clipboard API
+          var textArea = document.createElement("textarea");
+          textArea.value = pix;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-999999px";
+          textArea.style.top = "-999999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          try {
+            document.execCommand('copy');
+            $("#pixModal").modal('show');
+          } catch (err) {
+            console.error('Erro ao copiar PIX:', err);
+          }
+          textArea.remove();
+        }
       });
 
-      // Adicionar funcionalidade de clique no mapa
-      $('iframe[src*="google.com/maps"]').on('load', function() {
-        $(this).on('click', function() {
-          window.open('https://www.google.com/maps/dir/?api=1&destination=R.+Profa.+Hilda+Marques,+52+-+Vila+Cristo+Redentor,+Jundiaí+-+SP,+13203-200', '_blank');
-        });
+      // Funcionalidade de clique no mapa - mais segura
+      $('.ratio iframe').on('click', function(e) {
+        e.preventDefault();
+        var mapUrl = 'https://www.google.com/maps/dir/?api=1&destination=R.+Profa.+Hilda+Marques,+52+-+Vila+Cristo+Redentor,+Jundiaí+-+SP,+13203-200';
+        var win = window.open(mapUrl, '_blank', 'noopener,noreferrer');
+        if (win) {
+          win.focus();
+        }
       });
     });
   </script>
