@@ -22,10 +22,9 @@ function initializeTheme() {
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
     
-    // Get saved theme or detect system preference
+    // Get saved theme or default to light mode
     const savedTheme = localStorage.getItem('acf-theme');
-    const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    const initialTheme = savedTheme || systemPreference;
+    const initialTheme = savedTheme || 'light'; // Default to light mode
     
     // Set initial theme
     setTheme(initialTheme);
@@ -43,10 +42,11 @@ function initializeTheme() {
         });
     }
     
-    // Listen for system theme changes
+    // Listen for system theme changes (only apply if user hasn't set a preference)
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         if (!localStorage.getItem('acf-theme')) {
-            setTheme(e.matches ? 'dark' : 'light');
+            // Even if system changes, keep light as default
+            setTheme('light');
         }
     });
 }
