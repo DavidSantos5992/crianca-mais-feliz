@@ -414,6 +414,33 @@ function getCampaignData(campaignId) {
                 </div>
             `
         },
+        diacriancas2025: {
+            title: 'Dia das Crianças 2025',
+            content: `
+                <div class="campaign-modal__content">
+                    <img src="./assets/campanhas_realizadas/diadascrianças2025/foto1.jpeg" alt="Dia das Crianças 2025" class="campaign-modal__image">
+                    <div class="campaign-modal__info">
+                        <h3>Dia das Crianças 2025</h3>
+                        <p>Nossa mais recente celebração do Dia das Crianças, repleta de alegria, presentes e momentos inesquecíveis para toda a comunidade.</p>
+                        <div class="campaign-modal__gallery">
+                            <img src="./assets/campanhas_realizadas/diadascrianças2025/foto2.jpeg" alt="Festa 1" class="gallery-image">
+                            <img src="./assets/campanhas_realizadas/diadascrianças2025/foto3.jpeg" alt="Festa 2" class="gallery-image">
+                            <img src="./assets/campanhas_realizadas/diadascrianças2025/foto4.jpeg" alt="Festa 3" class="gallery-image">
+                            <img src="./assets/campanhas_realizadas/diadascrianças2025/foto5.jpeg" alt="Festa 4" class="gallery-image">
+                            <p><strong>Resultados da Campanha:</strong></p>
+                            <ul>
+                                <li>250 presentes distribuídos</li>
+                                <li>180 crianças participaram da festa</li>
+                                <li>25 voluntários engajados</li>
+                                <li>Festa com brinquedos infláveis e recreação</li>
+                                <li>Lanche especial e bolo comemorativo</li>
+                                <li>Distribuição de doces e guloseimas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `
+        },
         diacriancas2024: {
             title: 'Dia das Crianças 2024',
             content: `
