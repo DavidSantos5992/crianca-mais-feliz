@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
@@ -38,7 +38,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Font Awesome CSS Fix -->
+    <style>
+        /* Ensure Font Awesome icons display correctly */
+        .fas, .far, .fab, .fal, .fad {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+        }
+        
+        .fas {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+        
+        .far {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 400;
+        }
+        
+        .fab {
+            font-family: "Font Awesome 6 Brands";
+            font-weight: 400;
+        }
+    </style>
     
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -912,6 +941,57 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Font Awesome Fallback Script -->
+    <script>
+        // Check if Font Awesome is loaded, if not, load SVG fallback
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait a moment for Font Awesome to load
+            setTimeout(function() {
+                const testIcon = document.createElement('i');
+                testIcon.className = 'fas fa-heart';
+                testIcon.style.position = 'absolute';
+                testIcon.style.left = '-9999px';
+                document.body.appendChild(testIcon);
+                
+                const computedStyle = window.getComputedStyle(testIcon, ':before');
+                const content = computedStyle.getPropertyValue('content');
+                
+                // If Font Awesome didn't load (content is 'none' or empty)
+                if (!content || content === 'none' || content === '""') {
+                    console.warn('Font Awesome não carregou, aplicando fallback SVG');
+                    
+                    // Load SVG fallback CSS
+                    const link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = './svg-icons.css';
+                    document.head.appendChild(link);
+                    
+                    // Replace Font Awesome classes with SVG classes
+                    const iconMap = {
+                        'fa-heart': 'icon-heart',
+                        'fa-sun': 'icon-sun',
+                        'fa-moon': 'icon-moon',
+                        'fa-bars': 'icon-bars',
+                        'fa-times': 'icon-times',
+                        'fa-arrow-up': 'icon-arrow-up',
+                        'fa-whatsapp': 'icon-whatsapp'
+                    };
+                    
+                    Object.keys(iconMap).forEach(faClass => {
+                        const elements = document.querySelectorAll('.fa.' + faClass + ', .fas.' + faClass + ', .fab.' + faClass);
+                        elements.forEach(el => {
+                            el.className = el.className.replace(/fa[sb]?\s+fa-\w+/g, '').trim();
+                            el.classList.add(iconMap[faClass]);
+                        });
+                    });
+                }
+                
+                document.body.removeChild(testIcon);
+            }, 1000);
+        });
+    </script>
+    
     <script src="./acf-modern.js"></script>
 </body>
 </html>
