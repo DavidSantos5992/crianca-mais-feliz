@@ -441,6 +441,39 @@ function getCampaignData(campaignId) {
                 </div>
             `
         },
+        natal2025: {
+            title: 'Natal Solidário 2025',
+            content: `
+                <div class="campaign-modal__content">
+                    <img src="./assets/natal/logo_natal.jpg" alt="Natal Solidário 2025" class="campaign-modal__image">
+                    <div class="campaign-modal__info">
+                        <h3>Natal Solidário 2025</h3>
+                        <p>Campanha ativa! Faça parte da magia do Natal e ajude-nos a levar alegria e presentes especiais para nossas crianças e suas famílias.</p>
+                        <div class="campaign-modal__info-active">
+                            <p><strong>🎄 Como Participar:</strong></p>
+                            <ul>
+                                <li>📱 Entre em contato via WhatsApp</li>
+                                <li>🎁 Doe brinquedos, roupas ou alimentos</li>
+                                <li>💰 Contribua com doações em dinheiro</li>
+                                <li>👥 Seja um voluntário no evento</li>
+                                <li>📢 Compartilhe nossa campanha</li>
+                            </ul>
+                            <p><strong>📅 Cronograma:</strong></p>
+                            <ul>
+                                <li>🗓️ Arrecadações: até 20 de dezembro</li>
+                                <li>🎭 Festa de Natal: 22 de dezembro</li>
+                                <li>🏠 Entregas domiciliares: 23-24 de dezembro</li>
+                            </ul>
+                            <div class="campaign-modal__contact">
+                                <a href="https://api.whatsapp.com/send/?phone=5511918596727&text=Quero+colaborar+com+o+Natal+Solidário+2025" target="_blank" class="btn btn--primary">
+                                    <i class="fab fa-whatsapp"></i> Colaborar via WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
+        },
         diacriancas2024: {
             title: 'Dia das Crianças 2024',
             content: `
