@@ -1285,7 +1285,10 @@ img {
     border-top: 1px solid var(--gray-800);
     padding-top: var(--spacing-xl);
     text-align: center;
-    color: var(--gray-500);
+    color: var(--gray-500) !important;
+}
+.footer__bottom p {
+    color: #fff;
 }
 
 .footer__bottom p {

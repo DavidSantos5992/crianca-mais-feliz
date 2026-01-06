@@ -181,7 +181,7 @@
                         <div class="stat__label">Famílias Atendidas</div>
                     </div>
                     <div class="stat">
-                        <div class="stat__number">15</div>
+                        <div class="stat__number">16</div>
                         <div class="stat__label">Campanhas Realizadas</div>
                     </div>
                     <div class="stat">
@@ -319,63 +319,35 @@
                     <div class="campaign__card campaign__card--featured"
                         data-aos="fade-up" data-aos-delay="100">
                         <div class="campaign__image">
-                            <img src="./assets/natal/logo_natal.jpg"
-                                alt="Natal Solidário 2025">
+                            <img
+                                src="./assets/contra fome/logo_contra_fome.jpg"
+                                alt="Contra a Fome">
                             <div class="campaign__badge">Urgente</div>
                         </div>
                         <div class="campaign__content">
-                            <h3 class="campaign__title">Natal Solidário
-                                2025</h3>
+                            <h3 class="campaign__title">Contra a Fome</h3>
                             <p class="campaign__description">
-                                Faça parte da magia do Natal! Ajude-nos a levar
-                                alegria e presentes especiais para nossas
-                                crianças.
+                                Arrecadação contínua de alimentos não perecíveis para combater a fome e nutrir esperança nas famílias mais necessitadas.
                             </p>
                             <div class="campaign__progress">
                                 <div class="progress">
                                     <div class="progress__bar"
-                                        style="width: 25%"></div>
+                                        style="width: 45%"></div>
                                 </div>
-                                <span class="progress__text">25% da meta
-                                    atingida</span>
+                                <span class="progress__text">45% da meta mensal atingida</span>
                             </div>
-                            <a
-                                href="https://api.whatsapp.com/send/?phone=5511918596727&text=Vim+pelo+site%2C+gostaria+de+colaborar+com+o+Natal+Solidário+2025&type=phone_number&app_absent=0"
-                                target="_blank" rel="noopener noreferrer"
-                                class="btn btn--primary">
-                                <i class="fas fa-gift"></i>
-                                Participar do Natal
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="campaign__card" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="campaign__image">
-                            <img
-                                src="./assets/campanhas_realizadas/Rifa/rifa.png"
-                                alt="Rifa Solidária">
-                        </div>
-                        <div class="campaign__content">
-                            <h3 class="campaign__title">Rifa Solidária</h3>
-                            <p class="campaign__description">
-                                Todo valor arrecadado será usado para comprar
-                                alimentação para nossas crianças.
-                            </p>
-                            <div class="campaign__progress">
-                                <div class="progress">
-                                    <div class="progress__bar"
-                                        style="width: 65%"></div>
-                                </div>
-                                <span class="progress__text">65% da meta
-                                    atingida</span>
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <a href="https://api.whatsapp.com/send/?phone=5511918596727&text=Vim+pelo+site%2C+gostaria+de+doar+alimentos+para+a+campanha+Contra+a+Fome&type=phone_number&app_absent=0"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="btn btn--primary">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                    Doar Alimentos
+                                </a>
+                                <button class="btn btn--outline" onclick="openCampaignModal('contrafome')">
+                                    <i class="fas fa-info-circle"></i>
+                                    Ver Detalhes
+                                </button>
                             </div>
-                            <a href="https://criarifa.com/IBWIPs"
-                                target="_blank" rel="noopener noreferrer"
-                                class="btn btn--outline">
-                                <i class="fas fa-ticket-alt"></i>
-                                Participar da Rifa
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -490,6 +462,20 @@
                                     <p class="campaign__description">Celebração
                                         especial com festa e distribuição de
                                         presentes.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="campaign__card" data-aos="fade-up"
+                                data-aos-delay="600"
+                                onclick="openCampaignModal('natal2025')">
+                                <div class="campaign__image">
+                                    <img
+                                        src="./assets/natal_2025/foto_acf1.jpeg"
+                                        alt="Natal Solidário 2025">
+                                </div>
+                                <div class="campaign__content">
+                                    <h3 class="campaign__title">Natal Solidário 2025</h3>
+                                    <p class="campaign__description">Celebração mágica do Natal com entrega de presentes e alegria para nossas crianças.</p>
                                 </div>
                             </div>
                         </div>
@@ -967,8 +953,7 @@
                 <div class="footer__content">
                     <div class="footer__section">
                         <div class="footer__brand">
-                            <img src="./assets/Logo.svg" alt="ACF Logo"
-                                class="footer__logo">
+                            
                             <span class="footer__title">ACF</span>
                         </div>
                         <p class="footer__description">
@@ -1032,7 +1017,7 @@
                                 SP</p>
                             <p><i class="fas fa-phone"></i> (11) 91859-6727</p>
                             <p><i class="fas fa-envelope"></i>
-                                contato@acf.org.br</p>
+                                doacoes@associacaocriancamaisfeliz.com.br</p>
                         </div>
                     </div>
                 </div>
@@ -1040,7 +1025,7 @@
                 <div class="footer__bottom">
                     <p>&copy; 2025 ACF - Associação Criança Mais Feliz. Todos os
                         direitos reservados.</p>
-                    <p>Desenvolvido com ❤️ por <a
+                    <p>Desenvolvido por <a
                             href="https://www.astrocode.com.br/" target="_blank"
                             rel="noopener noreferrer">Astro Code</a></p>
                 </div>

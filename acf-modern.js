@@ -385,7 +385,6 @@ function getCampaignData(campaignId) {
                             <ul>
                                 <li>500 peças de roupas distribuídas</li>
                                 <li>150 cobertores entregues</li>
-                                <li>70 famílias aquecidas</li>
                                 <li>Parceria com 8 empresas locais</li>
                             </ul>
                         </div>
@@ -429,8 +428,8 @@ function getCampaignData(campaignId) {
                             <img src="./assets/campanhas_realizadas/diadascrianças2025/foto5.jpeg" alt="Festa 4" class="gallery-image">
                             <p><strong>Resultados da Campanha:</strong></p>
                             <ul>
-                                <li>250 presentes distribuídos</li>
-                                <li>180 crianças participaram da festa</li>
+                                <li>50 presentes distribuídos</li>
+                                <li>40 crianças participaram da festa</li>
                                 <li>25 voluntários engajados</li>
                                 <li>Festa com brinquedos infláveis e recreação</li>
                                 <li>Lanche especial e bolo comemorativo</li>
@@ -445,30 +444,62 @@ function getCampaignData(campaignId) {
             title: 'Natal Solidário 2025',
             content: `
                 <div class="campaign-modal__content">
-                    <img src="./assets/natal/logo_natal.jpg" alt="Natal Solidário 2025" class="campaign-modal__image">
+                    <img src="./assets/natal_2025/foto_acf1.jpeg" alt="Natal Solidário 2025" class="campaign-modal__image">
                     <div class="campaign-modal__info">
-                        <h3>Natal Solidário 2025</h3>
-                        <p>Campanha ativa! Faça parte da magia do Natal e ajude-nos a levar alegria e presentes especiais para nossas crianças e suas famílias.</p>
-                        <div class="campaign-modal__info-active">
-                            <p><strong>🎄 Como Participar:</strong></p>
+                        <h3>Natal Solidário 2025 - Campanha Realizada com Sucesso! 🎄</h3>
+                        <p>Nossa campanha de Natal 2025 foi um verdadeiro sucesso! Conseguimos levar alegria, amor e esperança para dezenas de famílias em situação de vulnerabilidade.</p>
+                        
+                        <div class="campaign-modal__results">
+                            <h4>🎁 Resultados Alcançados:</h4>
                             <ul>
-                                <li>📱 Entre em contato via WhatsApp</li>
-                                <li>🎁 Doe brinquedos, roupas ou alimentos</li>
-                                <li>💰 Contribua com doações em dinheiro</li>
-                                <li>👥 Seja um voluntário no evento</li>
-                                <li>📢 Compartilhe nossa campanha</li>
+                                <li>✨ <strong>Mais de 20 presentes</strong> distribuídos</li>
+                                <li>👨‍👩‍👧‍👦 <strong>Mais de 20 crianças</strong> atendidas</li>
+                                <li>🏠 <strong>Mais de 20 famílias</strong> beneficiadas</li>
+                                <li>🤝 <strong>10 voluntários</strong> engajados</li>
+                                <li>🎄 Evento especial de Natal realizado com sucesso</li>
                             </ul>
-                            <p><strong>📅 Cronograma:</strong></p>
-                            <ul>
-                                <li>🗓️ Arrecadações: até 20 de dezembro</li>
-                                <li>🎭 Festa de Natal: 22 de dezembro</li>
-                                <li>🏠 Entregas domiciliares: 23-24 de dezembro</li>
-                            </ul>
-                            <div class="campaign-modal__contact">
-                                <a href="https://api.whatsapp.com/send/?phone=5511918596727&text=Quero+colaborar+com+o+Natal+Solidário+2025" target="_blank" class="btn btn--primary">
-                                    <i class="fab fa-whatsapp"></i> Colaborar via WhatsApp
-                                </a>
+                        </div>
+                        
+                        <div class="campaign-modal__description">
+                            <h4>� Sobre a Campanha:</h4>
+                            <p>O Natal Solidário 2025 foi marcado por momentos mágicos e inesquecíveis. Realizamos uma celebração especial com distribuição de presentes, lanches, brincadeiras e muita alegria para as crianças e suas famílias.</p>
+                            <p>Contamos com o apoio fundamental de nossos parceiros, voluntários e doadores que tornaram esse sonho realidade. Cada sorriso, cada abraço e cada momento de alegria reforçaram nossa missão de transformar vidas.</p>
+                        </div>
+                        
+                        <div class="campaign-modal__gallery">
+                            <h4>📸 Galeria de Fotos:</h4>
+                            <div class="gallery-grid">
+                                <img src="./assets/natal_2025/foto_acf1.jpeg" alt="Natal 2025 - Foto 1" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf2.jpeg" alt="Natal 2025 - Foto 2" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf3.jpeg" alt="Natal 2025 - Foto 3" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf4.jpeg" alt="Natal 2025 - Foto 4" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf5.jpeg" alt="Natal 2025 - Foto 5" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf6.jpeg" alt="Natal 2025 - Foto 6" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf7.jpeg" alt="Natal 2025 - Foto 7" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf8.jpeg" alt="Natal 2025 - Foto 8" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf9.jpeg" alt="Natal 2025 - Foto 9" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf10.jpeg" alt="Natal 2025 - Foto 10" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf11.jpeg" alt="Natal 2025 - Foto 11" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf12.jpeg" alt="Natal 2025 - Foto 12" onclick="openImageModal(this.src)">
+                                <img src="./assets/natal_2025/foto_acf13.jpeg" alt="Natal 2025 - Foto 13" onclick="openImageModal(this.src)">
                             </div>
+                        </div>
+                        
+                        <div class="campaign-modal__testimonials">
+                            <h4>💝 Depoimentos:</h4>
+                            <blockquote>
+                                <p>"Ver o sorriso no rosto dos meus filhos no Natal foi indescritível. Muito obrigada ACF por nos fazer acreditar na magia do Natal novamente!"</p>
+                                <cite>- Mãe beneficiada</cite>
+                            </blockquote>
+                            <blockquote>
+                                <p>"Participar como voluntário foi uma experiência transformadora. Ver a alegria das crianças me encheu de gratidão e esperança."</p>
+                                <cite>- Voluntário da campanha</cite>
+                            </blockquote>
+                        </div>
+                        
+                        <div class="campaign-modal__thanks">
+                            <h4>🙏 Agradecimentos:</h4>
+                            <p>Nosso sincero agradecimento a todos que tornaram este Natal especial possível: doadores, voluntários, parceiros, empresas e a toda comunidade que abraçou nossa causa. Juntos somos mais fortes!</p>
                         </div>
                     </div>
                 </div>
@@ -487,8 +518,8 @@ function getCampaignData(campaignId) {
                             <img src="./assets/campanhas_realizadas/diaDasCriancas2024/entrega2.jpeg" alt="Entrega 2" class="gallery-image">
                             <p><strong>Resultados da Campanha:</strong></p>
                             <ul>
-                                <li>200 presentes distribuídos</li>
-                                <li>120 crianças participaram da festa</li>
+                                <li>50 presentes distribuídos</li>
+                                <li>30 crianças participaram da festa</li>
                                 <li>Brinquedoteca montada</li>
                                 <li>Lanche especial para todos</li>
                             </ul>
@@ -509,12 +540,7 @@ function getCampaignData(campaignId) {
                             <img src="./assets/campanhas_realizadas/dhl_contra_fome/foto1.jpeg" alt="DHL 1" class="gallery-image">
                             <img src="./assets/campanhas_realizadas/dhl_contra_fome/foto2.jpeg" alt="DHL 2" class="gallery-image">
                             <p><strong>Resultados da Campanha:</strong></p>
-                            <ul>
-                                <li>3 toneladas de alimentos arrecadados</li>
-                                <li>120 cestas básicas distribuídas</li>
-                                <li>90 famílias beneficiadas</li>
-                                <li>Engajamento de 100% dos funcionários</li>
-                            </ul>
+                           
                         </div>
                     </div>
                 </div>
@@ -530,12 +556,7 @@ function getCampaignData(campaignId) {
                         <p>Celebração natalina que trouxe esperança e alegria para famílias em situação de vulnerabilidade.</p>
                         <div class="campaign-modal__gallery">
                             <p><strong>Resultados da Campanha:</strong></p>
-                            <ul>
-                                <li>300 presentes distribuídos</li>
-                                <li>150 crianças contempladas</li>
-                                <li>80 famílias beneficiadas</li>
-                                <li>Ceia solidária para 200 pessoas</li>
-                            </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -552,11 +573,89 @@ function getCampaignData(campaignId) {
                         <div class="campaign-modal__gallery">
                             <p><strong>Resultados da Campanha:</strong></p>
                             <ul>
-                                <li>180 ovos de chocolate distribuídos</li>
-                                <li>120 crianças atendidas</li>
+                                <li>80 ovos de chocolate distribuídos</li>
+                                <li>40 crianças atendidas</li>
                                 <li>Caça aos ovos organizada</li>
                                 <li>Café da manhã especial</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            `
+        },
+        contrafome: {
+            title: 'Contra a Fome',
+            content: `
+                <div class="campaign-modal__content">
+                    <img src="./assets/contra fome/logo_contra_fome.jpg" alt="Contra a Fome" class="campaign-modal__image">
+                    <div class="campaign-modal__info">
+                        <h3>Campanha Contra a Fome - URGENTE! 🍽️</h3>
+                        <p>Nossa campanha permanente de arrecadação de alimentos está ativa e precisa da sua ajuda! Milhares de famílias em situação de vulnerabilidade dependem dessa corrente de solidariedade.</p>
+                        
+                        <div class="campaign-modal__info-active">
+                            <p><strong>🛒 O que você pode doar:</strong></p>
+                            <ul>
+                                <li>🍚 Arroz, feijão, macarrão</li>
+                                <li>🥫 Enlatados e conservas</li>
+                                <li>🧃 Leite em pó ou longa vida</li>
+                                <li>🍪 Biscoitos e bolachas</li>
+                                <li>🧂 Óleo, sal, açúcar</li>
+                                <li>☕ Café, achocolatado</li>
+                                <li>🥫 Molhos e temperos</li>
+                                <li>📦 Produtos não perecíveis em geral</li>
+                            </ul>
+                            
+                            <p><strong>📍 Como Doar:</strong></p>
+                            <ul>
+                                <li>🏠 <strong>Entrega na sede:</strong> R. Profa. Hilda Marques, 52 - Vila Cristo Redentor, Jundiaí-SP</li>
+                                <li>📱 <strong>WhatsApp:</strong> Entre em contato para agendar coleta</li>
+                                <li>💰 <strong>Doação financeira:</strong> Contribua via PIX para comprarmos cestas básicas</li>
+                                <li>🤝 <strong>Campanha corporativa:</strong> Sua empresa pode ser parceira</li>
+                            </ul>
+                            
+                            <p><strong>⏰ Horários de Recebimento:</strong></p>
+                            <ul>
+                                <li>Segunda a Sexta: 8h às 17h</li>
+                                <li>Sábados: 8h às 12h</li>
+                            </ul>
+                            
+                            <div class="campaign-modal__stats">
+                                <h4>📊 Meta Mensal (Janeiro 2026):</h4>
+                                <ul>
+                                    <li>🎯 <strong>Meta:</strong> 200 cestas básicas</li>
+                                    <li>✅ <strong>Arrecadado:</strong> 90 cestas</li>
+                                    <li>⏳ <strong>Faltam:</strong> 110 cestas</li>
+                                    <li>👨‍👩‍👧‍👦 <strong>Famílias aguardando:</strong> 150+</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="campaign-modal__impact">
+                                <h4>💝 Seu Impacto:</h4>
+                                <p>Cada doação representa:</p>
+                                <ul>
+                                    <li>🍽️ Refeições garantidas para uma família</li>
+                                    <li>😊 Dignidade e esperança restauradas</li>
+                                    <li>👶 Crianças bem alimentadas e saudáveis</li>
+                                    <li>💪 Fortalecimento da comunidade</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="campaign-modal__contact">
+                                <a href="https://api.whatsapp.com/send/?phone=5511918596727&text=Quero+doar+alimentos+para+a+campanha+Contra+a+Fome" target="_blank" class="btn btn--primary">
+                                    <i class="fab fa-whatsapp"></i> Doar via WhatsApp
+                                </a>
+                            </div>
+                            
+                            <div class="campaign-modal__pix">
+                                <h4>💰 Doação via PIX:</h4>
+                                <p><strong>CNPJ:</strong> 34.863.177/0001-33</p>
+                                <p><strong>Razão Social:</strong> Associação Criança Mais Feliz</p>
+                                <p>Com sua doação em dinheiro, compramos cestas básicas completas e entregamos diretamente às famílias.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="campaign-modal__urgency">
+                            <p class="urgency-message">⚠️ <strong>CAMPANHA URGENTE!</strong> A fome não espera. Sua doação hoje pode fazer a diferença entre uma família passar fome ou ter dignidade na mesa. Participe!</p>
                         </div>
                     </div>
                 </div>
