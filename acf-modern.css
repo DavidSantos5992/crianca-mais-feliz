@@ -746,12 +746,16 @@ img {
     width: 100%;
     height: 200px;
     overflow: hidden;
+    background-color: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .help__image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .help__content {
