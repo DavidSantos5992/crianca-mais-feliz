@@ -332,7 +332,7 @@ function getCampaignData(campaignId) {
             title: 'Volta às Aulas 2026',
             content: `
                 <div class="campaign-modal__content">
-                    <img src="./assets/campanhas_realizadas/campanha_ativa/quero que.png" alt="Volta às Aulas 2026" class="campaign-modal__image">
+                    <img src="./assets/CAMPANHA_ATIVA/VOLTA_AS_AULAS.jpg" alt="Volta às Aulas 2026" class="campaign-modal__image">
                     <div class="campaign-modal__info">
                         <h3>Volta às Aulas 2026</h3>
                         <p>Campanha ativa para garantir que mais de 20 crianças tenham acesso a todos os materiais escolares necessários para começar o ano letivo com dignidade e oportunidades iguais de aprendizado.</p>
