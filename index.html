@@ -87,7 +87,7 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="./acf-modern.css?v=1.0.1">
+        <link rel="stylesheet" href="./acf-modern.css?v=1.0.2">
     </head>
     <body>
         <!-- Header -->
@@ -316,8 +316,45 @@
                 </div>
 
                 <div class="campaigns__grid">
+                    <!-- Volta às Aulas -->
                     <div class="campaign__card campaign__card--featured"
                         data-aos="fade-up" data-aos-delay="100">
+                        <div class="campaign__image">
+                            <img
+                                src="./assets/campanhas_realizadas/campanha_ativa/quero que.png"
+                                alt="Volta às Aulas">
+                            <div class="campaign__badge">Ativa</div>
+                        </div>
+                        <div class="campaign__content">
+                            <h3 class="campaign__title">Volta às Aulas 2026</h3>
+                            <p class="campaign__description">
+                                Ajude-nos a garantir que mais de 20 crianças retornem às aulas com todo o material escolar necessário para um ano letivo de sucesso e aprendizado.
+                            </p>
+                            <div class="campaign__progress">
+                                <div class="progress">
+                                    <div class="progress__bar"
+                                        style="width: 30%"></div>
+                                </div>
+                                <span class="progress__text">30% da meta atingida</span>
+                            </div>
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <a href="https://api.whatsapp.com/send/?phone=5511918596727&text=Vim+pelo+site%2C+gostaria+de+doar+materiais+escolares+para+a+campanha+Volta+às+Aulas&type=phone_number&app_absent=0"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="btn btn--primary">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    Doar Materiais
+                                </a>
+                                <button class="btn btn--outline" onclick="openCampaignModal('voltaasaulas')">
+                                    <i class="fas fa-info-circle"></i>
+                                    Ver Detalhes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contra a Fome -->
+                    <div class="campaign__card campaign__card--featured"
+                        data-aos="fade-up" data-aos-delay="200">
                         <div class="campaign__image">
                             <img
                                 src="./assets/contra fome/logo_contra_fome.jpg"
@@ -1229,6 +1266,6 @@
         });
     </script>
 
-        <script src="./acf-modern.js?v=1.0.1"></script>
+        <script src="./acf-modern.js?v=1.0.2"></script>
     </body>
 </html>

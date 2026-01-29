@@ -328,6 +328,67 @@ function closeCampaignModal() {
 // Get campaign data
 function getCampaignData(campaignId) {
     const campaigns = {
+        voltaasaulas: {
+            title: 'Volta às Aulas 2026',
+            content: `
+                <div class="campaign-modal__content">
+                    <img src="./assets/campanhas_realizadas/campanha_ativa/quero que.png" alt="Volta às Aulas 2026" class="campaign-modal__image">
+                    <div class="campaign-modal__info">
+                        <h3>Volta às Aulas 2026</h3>
+                        <p>Campanha ativa para garantir que mais de 20 crianças tenham acesso a todos os materiais escolares necessários para começar o ano letivo com dignidade e oportunidades iguais de aprendizado.</p>
+                        
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-bullseye"></i> Objetivo da Campanha</h4>
+                            <p>Arrecadar materiais escolares completos para mais de 20 crianças em situação de vulnerabilidade social, garantindo que iniciem o ano letivo com tudo que precisam para estudar.</p>
+                        </div>
+
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-list-check"></i> Materiais Necessários</h4>
+                            <ul>
+                                <li>📓 Cadernos (brochura e espiral)</li>
+                                <li>✏️ Lápis, canetas, borrachas e apontadores</li>
+                                <li>🎨 Material de arte (lápis de cor, giz de cera, canetinhas)</li>
+                                <li>📐 Material de geometria (régua, transferidor, compasso)</li>
+                                <li>🎒 Mochilas escolares</li>
+                                <li>📚 Livros didáticos e paradidáticos</li>
+                                <li>✂️ Tesoura sem ponta, cola, fita adesiva</li>
+                                <li>📝 Pasta plástica, pastas com elástico</li>
+                            </ul>
+                        </div>
+
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-hand-holding-heart"></i> Como Ajudar</h4>
+                            <ul>
+                                <li><strong>Doação de Materiais:</strong> Entre em contato conosco para agendar a entrega dos materiais escolares</li>
+                                <li><strong>Doação Financeira:</strong> Contribua via PIX para que possamos comprar os materiais necessários</li>
+                                <li><strong>Apadrinhamento:</strong> Adote uma criança e forneça todo o kit escolar completo</li>
+                                <li><strong>Divulgação:</strong> Compartilhe nossa campanha nas redes sociais e ajude a alcançar mais pessoas</li>
+                            </ul>
+                        </div>
+
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-heart"></i> Impacto Esperado</h4>
+                            <p>Com sua ajuda, conseguiremos:</p>
+                            <ul>
+                                <li>✅ Atender mais de 20 crianças com material escolar completo</li>
+                                <li>✅ Reduzir a evasão escolar causada pela falta de materiais</li>
+                                <li>✅ Aumentar a autoestima e confiança das crianças</li>
+                                <li>✅ Proporcionar igualdade de oportunidades no aprendizado</li>
+                                <li>✅ Aliviar o orçamento de famílias em vulnerabilidade</li>
+                            </ul>
+                        </div>
+
+                        <div class="campaign-modal__cta">
+                            <p><strong>Juntos podemos transformar o futuro dessas crianças através da educação! 📚❤️</strong></p>
+                            <a href="https://api.whatsapp.com/send/?phone=5511918596727&text=Vim+pelo+site%2C+gostaria+de+doar+materiais+escolares+para+a+campanha+Volta+às+Aulas" 
+                               target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                                <i class="fas fa-graduation-cap"></i> Quero Ajudar Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `
+        },
         pascoa2025: {
             title: 'Páscoa Solidária 2025',
             content: `
