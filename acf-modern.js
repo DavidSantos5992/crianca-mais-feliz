@@ -410,6 +410,73 @@ function getCampaignData(campaignId) {
                 </div>
             `
         },
+        pascoa2026: {
+            title: 'Páscoa Solidária 2026 - Distribuição de Chocolates para Crianças em Situação de Vulnerabilidade',
+            content: `
+                <div class="campaign-modal__content">
+                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz1.jpeg" alt="Páscoa Solidária 2026 - Criança Mais Feliz distribuindo chocolates de Páscoa" class="campaign-modal__image">
+                    <div class="campaign-modal__info">
+                        <h3>Páscoa Solidária 2026</h3>
+                        <p><strong>Celebrando a Páscoa com Solidariedade e Amor</strong></p>
+                        <p>A Associação Criança Mais Feliz realizou com sucesso mais uma edição de sua tradicional campanha de Páscoa Solidária, levando chocolates, alegria e esperança para crianças em situação de vulnerabilidade social na região de Jundiaí.</p>
+                        
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-heart"></i> Sobre a Campanha</h4>
+                            <p>A Páscoa Solidária 2026 foi uma celebração especial da Criança Mais Feliz, com foco em distribuir chocolates de qualidade e criar momentos memoráveis de alegria para as crianças atendidas pela ONG. A campanha reforça nosso compromisso com a transformação social e o bem-estar das famílias mais necessitadas.</p>
+                        </div>
+
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-chart-bar"></i> Impacto e Resultados</h4>
+                            <ul>
+                                <li>✅ Centenas de chocolates de Páscoa distribuídos</li>
+                                <li>✅ Dezenas de crianças atendidas com alegria</li>
+                                <li>✅ Momentos especiais de celebração em família</li>
+                                <li>✅ Reforço do apoio social continuado da ACF</li>
+                                <li>✅ Voluntários engajados na causa</li>
+                            </ul>
+                        </div>
+
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-images"></i> Galeria de Momentos</h4>
+                            <div class="campaign-modal__gallery">
+                                <div class="gallery-grid">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz1.jpeg" alt="Distribuição de chocolates - Páscoa Solidária 2026">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz2.jpeg" alt="Criança recebendo chocolate de Páscoa - ACF">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz3.jpeg" alt="Momento especial da Páscoa Solidária - ONG Jundiaí">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz4.jpeg" alt="Voluntários da ACF - Páscoa 2026">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz5.jpeg" alt="Celebração de Páscoa com crianças necessitadas">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz6.jpeg" alt="Distribuição de presentes - Páscoa Solidária">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz7.jpeg" alt="Crianças felizes na Páscoa - Criança Mais Feliz">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz8.jpeg" alt="Ação social ACF - Páscoa 2026">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz9.jpeg" alt="Voluntariado solidário - Páscoa Criança Mais Feliz">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz10.jpeg" alt="Momento de alegria - Páscoa 2026 ACF">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz11.jpeg" alt="Distribuição solidária - Pascoa Jundiaí">
+                                    <img src="./assets/campanhas_realizadas/pascoa2026/pascoaCriancaMaisFeliz12.jpeg" alt="Crianças celebrando a Páscoa - Associação Criança Mais Feliz">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-lightbulb"></i> Por Que Realizamos Essa Campanha?</h4>
+                            <p>A Páscoa é um momento de celebração, esperança e renovação. Acreditamos que toda criança merece vivenciar a magia dessa data, independentemente de sua situação econômica. A Campanha de Páscoa Solidária da Criança Mais Feliz existe para garantir que nenhuma criança fica de fora dessa celebração especial.</p>
+                        </div>
+
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-hands-helping"></i> Próximas Campanhas</h4>
+                            <p>Continuamos nossa missão de transformar vidas através de ações solidárias. Acompanhe nossas próximas campanhas e saiba como você pode ajudar crianças em situação de vulnerabilidade social na região de Jundiaí-SP.</p>
+                        </div>
+
+                        <div class="campaign-modal__cta">
+                            <p><strong>Obrigado pelo apoio! Sua solidariedade faz a diferença na vida de nossas crianças! 🐰❤️</strong></p>
+                            <a href="https://api.whatsapp.com/send/?phone=5511918596727&text=Vim+pelo+site%2C+gostaria+de+saber+como+participar+das+próximas+campanhas+da+ACF" 
+                               target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                                <i class="fas fa-hand-holding-heart"></i> Participar de Futuras Campanhas
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `
+        },
         motoclub: {
             title: 'Motoclub Contra a Fome',
             content: `
