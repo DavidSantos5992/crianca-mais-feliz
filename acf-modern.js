@@ -788,6 +788,89 @@ function getCampaignData(campaignId) {
                     </div>
                 </div>
             `
+        },
+        invernosolidario: {
+            title: 'Inverno Solidário 2026',
+            content: `
+                <div class="campaign-modal__content">
+                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/Capa.png" alt="Inverno Solidário 2026" class="campaign-modal__image">
+                    <div class="campaign-modal__info">
+                        <h3>Inverno Solidário 2026 - Kit de Proteção para Nossas Crianças ❄️</h3>
+                        <p>Campanha ativa de arrecadação de itens essenciais para proteger nossas crianças durante o período de frio. Cada doação garante conforto e segurança para os pequenos da comunidade.</p>
+                        
+                        <div class="campaign-modal__info-active">
+                            <h4><i class="fas fa-snowflake"></i> O Que Contém o Kit de Inverno?</h4>
+                            <p>Cada kit de inverno inclui itens cuidadosamente selecionados para proporcionar proteção completa:</p>
+                            <ul>
+                                <li>🛏️ <strong>Coberta:</strong> Proteção contra o frio durante o dia e à noite</li>
+                                <li>🧥 <strong>Agasalho:</strong> Casaco ou suéter de qualidade para manter o calor</li>
+                                <li>🧦 <strong>Meias:</strong> Meias quentes para proteger os pequenos pés</li>
+                                <li>🎩 <strong>Touca/Gorro:</strong> Proteção para a cabeça e orelhas do frio</li>
+                                <li>🧴 <strong>Kit Higiene:</strong> Sabonete, shampoo e itens de higiene pessoal</li>
+                                <li>🍎 <strong>Alimentação Especial:</strong> Itens nutritivos e especiais para fortalecer a imunidade</li>
+                            </ul>
+                            
+                            <p><strong>❓ Por Que Essas Crianças Precisam?</strong></p>
+                            <p>As crianças atendidas pela Associação Criança Mais Feliz vivem em situação de vulnerabilidade social. Durante o inverno, o risco de doenças respiratórias e hypothermia aumenta. Este kit é essencial para garantir sua saúde, conforto e segurança nos meses mais frios do ano.</p>
+                            
+                            <h4><i class="fas fa-heart"></i> Como Você Pode Ajudar</h4>
+                            <ul>
+                                <li>🛍️ <strong>Doação de Itens Novos:</strong> Contribua com qualquer item do kit (coberta, agasalho, meia, touca, etc.)</li>
+                                <li>💰 <strong>Doação Financeira via PIX:</strong> Contribua em dinheiro para comprarmos os itens necessários</li>
+                                <li>🤝 <strong>Apadrinhamento:</strong> Adote uma criança e forneça um kit completo</li>
+                                <li>🏢 <strong>Parceria Corporativa:</strong> Sua empresa pode fazer uma doação em massa</li>
+                            </ul>
+                            
+                            <p><strong>📍 Onde Entregar:</strong></p>
+                            <ul>
+                                <li>🏠 <strong>Sede da ACF:</strong> R. Profa. Hilda Marques, 52 - Vila Cristo Redentor, Jundiaí-SP</li>
+                                <li>📱 <strong>WhatsApp:</strong> Agende a entrega ou coleta dos itens doados</li>
+                                <li>⏰ <strong>Horários:</strong> Segunda a Sexta (8h-17h) | Sábado (8h-12h)</li>
+                            </ul>
+                            
+                            <div class="campaign-modal__stats">
+                                <h4>📊 Meta da Campanha de Inverno 2026:</h4>
+                                <ul>
+                                    <li>🎯 <strong>Crianças a Atender:</strong> 50 crianças</li>
+                                    <li>🎁 <strong>Kits Completos Necessários:</strong> 50 kits</li>
+                                    <li>✅ <strong>Kits Arrecadados:</strong> 15 kits (em andamento)</li>
+                                    <li>⏳ <strong>Faltam:</strong> 35 kits</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="campaign-modal__impact">
+                                <h4>💝 Seu Impacto - O Que Uma Doação Significa:</h4>
+                                <p>Ao contribuir com o Inverno Solidário, você:</p>
+                                <ul>
+                                    <li>❄️ Protege uma criança do frio intenso</li>
+                                    <li>😊 Traz conforto e segurança</li>
+                                    <li>🏥 Reduz o risco de doenças respiratórias</li>
+                                    <li>📚 Permite que a criança compareça à escola sem faltar por frio</li>
+                                    <li>💪 Fortalece a imunidade com alimentação especial</li>
+                                    <li>❤️ Demonstra amor e cuidado genuíno</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="campaign-modal__pix">
+                                <h4>💰 Doação via PIX:</h4>
+                                <p><strong>CNPJ:</strong> 34.863.177/0001-33</p>
+                                <p><strong>Razão Social:</strong> Associação Criança Mais Feliz</p>
+                                <p>Sua doação em dinheiro nos permite comprar itens de qualidade e distribuir kits completos para todas as crianças. Muito obrigado!</p>
+                            </div>
+                            
+                            <div class="campaign-modal__contact">
+                                <a href="https://api.whatsapp.com/send/?phone=5511918596727&text=Quero+participar+da+campanha+Inverno+Solidário+2026" target="_blank" class="btn btn--primary">
+                                    <i class="fab fa-whatsapp"></i> Entrar em Contato
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="campaign-modal__urgency">
+                            <p class="urgency-message">❄️ <strong>CAMPANHA ATIVA!</strong> O inverno chegará em breve. Ajude-nos a proteger nossas crianças do frio com kits de proteção completos. Sua solidariedade faz diferença!</p>
+                        </div>
+                    </div>
+                </div>
+            `
         }
     };
     
