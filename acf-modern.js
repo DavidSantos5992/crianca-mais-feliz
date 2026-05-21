@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeModals();
     initializeForm();
     initializeAnimations();
+    initializeImageLoading();
 });
 
 /* =====================================================
@@ -323,6 +324,38 @@ function closeCampaignModal() {
         modal.classList.remove('show');
         document.body.classList.remove('modal-open');
     }
+}
+
+function openImageModal(imageSrc) {
+    let modal = document.getElementById('image-modal');
+    
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.className = 'modal';
+        modal.id = 'image-modal';
+        modal.innerHTML = `
+            <div class="modal__content image-modal__content">
+                <div class="modal__header">
+                    <h2 class="modal__title">Galeria</h2>
+                    <button class="modal__close" onclick="closeModal('image-modal')" aria-label="Fechar imagem">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal__body image-modal__body">
+                    <img src="" alt="Foto ampliada da campanha" class="image-modal__image">
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+    }
+    
+    const image = modal.querySelector('.image-modal__image');
+    if (image) {
+        image.src = imageSrc;
+    }
+    
+    modal.classList.add('show');
+    document.body.classList.add('modal-open');
 }
 
 // Get campaign data
@@ -973,12 +1006,12 @@ function handleFormSubmit(e) {
     // Show loading state
     const submitButton = e.target.querySelector('button[type="submit"]');
     const originalText = submitButton.innerHTML;
-    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Abrindo contato...';
     submitButton.disabled = true;
     
-    // Simulate form submission (replace with actual submission logic)
     setTimeout(() => {
-        // Reset button
+        openContactChannel(data);
+        
         submitButton.innerHTML = originalText;
         submitButton.disabled = false;
         
@@ -989,13 +1022,30 @@ function handleFormSubmit(e) {
             input.classList.remove('has-value', 'focused');
         });
         
-        // Show success message
-        showSuccessMessage('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+        showSuccessMessage('Canal de contato aberto. Envie a mensagem para concluir o contato.');
         
-        // Log form data (for development)
-        console.log('Form submitted:', data);
-        
-    }, 2000);
+    }, 500);
+}
+
+function openContactChannel(data) {
+    const message = [
+        `Nome: ${data.name}`,
+        `Email: ${data.email}`,
+        `Telefone: ${data.phone}`,
+        `Preferência: ${data.preference}`,
+        '',
+        data.message
+    ].join('\n');
+    
+    if (data.preference === 'email') {
+        const subject = encodeURIComponent('Contato pelo site ACF');
+        const body = encodeURIComponent(message);
+        window.location.href = `mailto:doacoes@associacaocriancamaisfeliz.com.br?subject=${subject}&body=${body}`;
+        return;
+    }
+    
+    const whatsappText = encodeURIComponent(`Vim pelo site da ACF.\n\n${message}`);
+    window.open(`https://wa.me/5511918596727?text=${whatsappText}`, '_blank', 'noopener,noreferrer');
 }
 
 function validateForm(data) {
@@ -1049,7 +1099,48 @@ function isValidPhone(phone) {
 }
 
 function showErrorMessage(message) {
-    alert(message); // Replace with a more elegant error display
+    let modal = document.getElementById('error-modal');
+    
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.className = 'modal';
+        modal.id = 'error-modal';
+        modal.innerHTML = `
+            <div class="modal__content modal__content--small">
+                <div class="modal__body">
+                    <div class="feedback-modal__content">
+                        <div class="feedback-modal__icon feedback-modal__icon--error">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <h2 class="feedback-modal__title">Revise os campos</h2>
+                        <p class="feedback-modal__message"></p>
+                        <button class="btn btn--primary" onclick="closeModal('error-modal')">OK</button>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+    }
+    
+    const messageElement = modal.querySelector('.feedback-modal__message');
+    if (messageElement) {
+        messageElement.textContent = message;
+    }
+    
+    modal.classList.add('show');
+    document.body.classList.add('modal-open');
+}
+
+function initializeImageLoading() {
+    document.querySelectorAll('img').forEach(image => {
+        if (!image.closest('.hero') && !image.hasAttribute('loading')) {
+            image.setAttribute('loading', 'lazy');
+        }
+        
+        if (!image.hasAttribute('decoding')) {
+            image.setAttribute('decoding', 'async');
+        }
+    });
 }
 
 /* =====================================================
@@ -1321,6 +1412,7 @@ window.ACF = {
     copyPix,
     openCampaignModal,
     closeCampaignModal,
+    openImageModal,
     openModal,
     closeModal,
     showSuccessMessage,

@@ -26,7 +26,7 @@ Site institucional moderno e responsivo para a Associação Criança Mais Feliz 
 - **JavaScript ES6+** com funcionalidades interativas
 - **Animações suaves** com AOS (Animate On Scroll)
 - **Design responsivo** para todos os dispositivos
-- **PWA ready** com manifest e service worker
+- **PWA ready** com manifest configurado
 
 ### Segurança
 - **Content Security Policy** configurada
@@ -36,13 +36,13 @@ Site institucional moderno e responsivo para a Associação Criança Mais Feliz 
 
 ## 🚀 Como Usar
 
-1. **Visualizar o site**: Abra o arquivo `acf-modern.html` em seu navegador
+1. **Visualizar o site**: Abra o arquivo `index.html` em seu navegador
 2. **Desenvolver**: Use um servidor local para melhor experiência de desenvolvimento
 3. **Deploy**: Faça upload dos arquivos para seu servidor web
 
 ## 📁 Arquivos Criados
 
-- `acf-modern.html` - Página principal moderna
+- `index.html` - Página principal moderna
 - `acf-modern.css` - Estilos institucionais
 - `acf-modern.js` - Funcionalidades interativas
 - `manifest.json` - Configuração PWA atualizada

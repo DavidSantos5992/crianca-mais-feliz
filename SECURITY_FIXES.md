@@ -9,23 +9,24 @@
 - **X-XSS-Protection**: Ativado para proteção contra XSS
 - **Referrer-Policy**: Configurado para controlar informações de referência
 - **Strict-Transport-Security (HSTS)**: Força uso de HTTPS
+- **Observação**: headers de segurança efetivos ficam no `.htaccess`; o HTML mantém apenas políticas que navegadores aceitam por `<meta>`.
 
 ### 2. Links Externos Seguros
 - **rel="noopener noreferrer"**: Adicionado a todos os links externos
 - Previne ataques de window.opener e controla referência
 
 ### 3. Recursos Carregados com Segurança
-- **Integridade de Scripts**: Adicionado SRI (Subresource Integrity) aos scripts externos
-- **crossorigin="anonymous"**: Configurado nos scripts externos
+- **CSP alinhada**: Dependências externas usadas pelo site foram refletidas na CSP do HTML e do `.htaccess`
+- **crossorigin="anonymous"**: Configurado nos recursos externos compatíveis
 
 ### 4. JavaScript Seguro
 - **Clipboard API**: Implementação segura para copiar PIX
 - **Fallback**: Método alternativo para navegadores sem suporte
 - **Event Prevention**: Uso de preventDefault() adequadamente
-- **Sanitização**: Remoção de event handlers inline
+- **Fluxo de contato real**: Formulário agora abre WhatsApp ou email com a mensagem preenchida
 
 ### 5. iFrame Seguro
-- **Sandbox**: Adicionado ao iframe do Google Maps
+- **Sandbox**: Adicionado ao iframe do Google Maps com permissões mínimas para o embed funcionar
 - **Title**: Adicionado para acessibilidade
 - **Política de referência**: Configurada adequadamente
 
