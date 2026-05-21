@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy"
+            content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com;">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="theme-color" content="#1e40af">
+
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="./assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="./assets/favicon_io/favicon-16x16.png">
+        <link rel="apple-touch-icon"
+            href="./assets/favicon_io/apple-touch-icon.png">
+        <link rel="manifest" href="./manifest.json">
+
+        <title>Galeria | ACF - Associação Criança Mais Feliz</title>
+        <meta name="description"
+            content="Galeria de fotos da Associação Criança Mais Feliz, com registros de campanhas, ações sociais e momentos especiais com crianças e famílias atendidas.">
+        <meta name="author" content="ACF - Associação Criança Mais Feliz">
+        <meta property="og:title" content="Galeria | ACF - Associação Criança Mais Feliz">
+        <meta property="og:description"
+            content="Registros de campanhas e ações sociais da Associação Criança Mais Feliz.">
+        <meta property="og:image"
+            content="https://associacaocriancamaisfeliz.com.br/assets/campanhas_realizadas/pascoa2025/crianças-acf2.jpeg">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="pt_BR">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./acf-modern.css?v=1.0.5">
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav__brand">
+                    <span class="nav__title">ACF</span>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html#inicio" class="nav__link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./index.html#sobre" class="nav__link">Quem Somos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./index.html#campanhas" class="nav__link">Campanhas</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./galeria.html" class="nav__link active">Galeria</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./index.html#parceiros" class="nav__link">Parceiros</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./index.html#contato" class="nav__link">Contato</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./index.html#ajudar"
+                                class="btn btn--primary btn--small">Doe Agora</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+
+                <div class="nav__actions">
+                    <button class="theme-toggle" id="theme-toggle"
+                        aria-label="Alternar tema">
+                        <i class="fas fa-sun theme-toggle__light"></i>
+                        <i class="fas fa-moon theme-toggle__dark"></i>
+                    </button>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="gallery-hero">
+                <div class="gallery-hero__bg">
+                    <img src="./assets/campanhas_realizadas/pascoa2025/crianças-acf2.jpeg"
+                        alt="Distribuição de chocolates e momentos de carinho na Páscoa Solidária 2025"
+                        class="gallery-hero__image">
+                    <div class="gallery-hero__overlay"></div>
+                </div>
+
+                <div class="container">
+                    <div class="gallery-hero__content" data-aos="fade-up">
+                        <span class="gallery-hero__eyebrow">
+                            <i class="fas fa-images"></i>
+                            Galeria ACF
+                        </span>
+                        <h1 class="gallery-hero__title">Momentos que contam nossa história</h1>
+                        <p class="gallery-hero__description">
+                            Registros das campanhas, entregas e encontros que aproximam a Associação Criança Mais Feliz das crianças e famílias atendidas.
+                        </p>
+                        <a href="#fotos" class="btn btn--primary btn--large">
+                            <i class="fas fa-camera"></i>
+                            Ver Fotos
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--bg" id="fotos">
+                <div class="container">
+                    <div class="section__header" data-aos="fade-up">
+                        <span class="section__subtitle">Fotos do Projeto</span>
+                        <h2 class="section__title">Galeria de Ações</h2>
+                        <p class="section__description">
+                            Filtre os registros por ano ou campanha para acompanhar de perto o impacto de cada ação.
+                        </p>
+                    </div>
+
+                    <div class="gallery-toolbar" data-aos="fade-up" data-aos-delay="100">
+                        <div class="gallery-toolbar__filters">
+                            <button class="btn btn--primary" type="button"
+                                data-gallery-filter="all">
+                                <i class="fas fa-border-all"></i>
+                                Ver todas
+                            </button>
+
+                            <div class="gallery-field">
+                                <label for="gallery-year">Ano</label>
+                                <select class="gallery-select" id="gallery-year">
+                                    <option value="">Todos os anos</option>
+                                </select>
+                            </div>
+
+                            <div class="gallery-field">
+                                <label for="gallery-campaign">Campanha</label>
+                                <select class="gallery-select" id="gallery-campaign">
+                                    <option value="">Todas as campanhas</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <p class="gallery-counter" id="gallery-counter" aria-live="polite"></p>
+                    </div>
+
+                    <div class="gallery-grid" data-gallery-grid></div>
+                    <p class="gallery-empty" id="gallery-empty" hidden>
+                        Nenhuma foto encontrada para este filtro.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <div class="footer__brand">
+                            <span class="footer__title">ACF</span>
+                        </div>
+                        <p class="footer__description">
+                            Transformando vidas através do amor, cuidado e
+                            solidariedade. Juntos construímos um futuro melhor
+                            para nossas crianças.
+                        </p>
+                        <div class="footer__social">
+                            <a href="https://wa.me/5511918596727"
+                                target="_blank" rel="noopener noreferrer"
+                                class="footer__social-link"
+                                aria-label="Falar com a ACF pelo WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/associacaocriancamais/"
+                                target="_blank" rel="noopener noreferrer"
+                                class="footer__social-link"
+                                aria-label="Visitar Instagram da ACF">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__section">
+                        <h3 class="footer__heading">Links Rápidos</h3>
+                        <ul class="footer__list">
+                            <li><a href="./index.html#inicio"
+                                    class="footer__link">Início</a></li>
+                            <li><a href="./index.html#sobre"
+                                    class="footer__link">Quem Somos</a></li>
+                            <li><a href="./index.html#campanhas"
+                                    class="footer__link">Campanhas</a></li>
+                            <li><a href="./galeria.html"
+                                    class="footer__link">Galeria</a></li>
+                            <li><a href="./index.html#parceiros"
+                                    class="footer__link">Parceiros</a></li>
+                            <li><a href="./index.html#contato"
+                                    class="footer__link">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__section">
+                        <h3 class="footer__heading">Como Ajudar</h3>
+                        <ul class="footer__list">
+                            <li><a href="./index.html#ajudar"
+                                    class="footer__link">Fazer Doação</a></li>
+                            <li><a href="./index.html#campanhas"
+                                    class="footer__link">Participar de Campanhas</a></li>
+                            <li><a href="./index.html#contato"
+                                    class="footer__link">Ser Voluntário</a></li>
+                            <li><a href="./index.html#parceiros"
+                                    class="footer__link">Ser Parceiro</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__section">
+                        <h3 class="footer__heading">Informações</h3>
+                        <div class="footer__info">
+                            <p><i class="fas fa-building"></i> CNPJ:
+                                34.863.177/0001-33</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Jundiaí -
+                                SP</p>
+                            <p><i class="fas fa-phone"></i> (11) 91859-6727</p>
+                            <p><i class="fas fa-envelope"></i>
+                                doacoes@associacaocriancamaisfeliz.com.br</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p>&copy; 2025 ACF - Associação Criança Mais Feliz. Todos os
+                        direitos reservados.</p>
+                    <p>Desenvolvido por <a
+                            href="https://www.astrocode.com.br/" target="_blank"
+                            rel="noopener noreferrer">Astro Code</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="whatsapp-float">
+            <a
+                href="https://wa.me/5511918596727?text=Vim%20pelo%20site,%20gostaria%20de%20conhecer%20melhor%20o%20projeto"
+                target="_blank" rel="noopener noreferrer" class="whatsapp-btn"
+                aria-label="Falar com a ACF pelo WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <button class="back-to-top" id="back-to-top"
+            aria-label="Voltar ao topo">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <div class="gallery-lightbox" id="gallery-lightbox" role="dialog"
+            aria-modal="true" aria-hidden="true"
+            aria-label="Foto ampliada da galeria">
+            <div class="gallery-lightbox__dialog">
+                <button class="gallery-lightbox__nav gallery-lightbox__nav--prev"
+                    id="gallery-lightbox-prev" type="button"
+                    aria-label="Foto anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <figure class="gallery-lightbox__figure">
+                    <img alt="" class="gallery-lightbox__image"
+                        id="gallery-lightbox-image">
+                    <figcaption class="gallery-lightbox__caption-wrap">
+                        <p class="gallery-lightbox__meta"
+                            id="gallery-lightbox-meta"></p>
+                        <p class="gallery-lightbox__caption"
+                            id="gallery-lightbox-caption"></p>
+                    </figcaption>
+                </figure>
+
+                <button class="gallery-lightbox__nav gallery-lightbox__nav--next"
+                    id="gallery-lightbox-next" type="button"
+                    aria-label="Próxima foto">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <button class="gallery-lightbox__close"
+                    id="gallery-lightbox-close" type="button"
+                    aria-label="Fechar foto ampliada">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <script>
+            window.acfGalleryGroups = [
+                {
+                    base: './assets/Galeria/',
+                    year: '2026',
+                    campaign: 'Registros gerais',
+                    category: 'registros-gerais',
+                    captionPrefix: 'Registro de ação social da Associação Criança Mais Feliz',
+                    numbered: false,
+                    files: [
+                        '2.jpeg',
+                        '3.jpeg',
+                        '4.jpeg',
+                        '5.jpeg',
+                        '6.jpeg',
+                        '7.jpeg',
+                        '8.jpeg',
+                        '9.jpeg',
+                        '10.jpeg',
+                        '11.jpeg',
+                        '12.jpeg',
+                        '13.jpeg',
+                        '14.jpeg',
+                        '15.jpeg',
+                        '16.jpeg',
+                        '17.jpeg',
+                        '18.jpeg',
+                        '19.jpeg',
+                        '20.jpeg',
+                        '21.jpeg',
+                        '22.jpeg',
+                        '23.jpeg',
+                        '24.jpeg',
+                        '25.jpeg',
+                        '26.jpeg',
+                        '28.jpeg',
+                        '29.jpeg',
+                        '30.jpeg',
+                        '31.jpeg',
+                        'FotoEntreg1.jpeg',
+                        'FotoEntreg2.jpeg',
+                        'FotoEntreg3.jpeg',
+                        'FotoEntreg4.jpeg',
+                        'FotoEntreg5.jpeg',
+                        'FotoEntreg6.jpeg',
+                        'FotoEntreg7.jpeg',
+                        'FotoEntreg8.jpeg',
+                        'FotoEntreg9.jpeg',
+                        'FotoEntreg10.jpeg',
+                        'FotoEntreg11.jpeg',
+                        'FotoEntreg12.jpeg',
+                        'FotoEntrega.jpeg',
+                        'FotoEntrega2.jpeg',
+                        'FotoEntrega3.jpeg',
+                        'FotoEntrega4.jpeg',
+                        'FotoEntrega5.jpeg',
+                        'FotoEntrega6.jpeg',
+                        'FotoEntrega7.jpeg',
+                        'FotoEntrega8.jpeg',
+                        'FotoEntrega9.jpeg',
+                        'FotoEntrega10.jpeg',
+                        'FotoEntrega11.jpeg',
+                        'FotoEntrega12.jpeg',
+                        'Unknown.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.03.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.04 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.04 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.04 (3).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.04 (4).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.04.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.05 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.05 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.05.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.06 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.06 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.06.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.07.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.08 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.08.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.09 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.09 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.09 (3).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.09 (4).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.09.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.10 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.10 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.10 (3).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.08.10.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.32.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.34.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.35 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.35 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.35.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.36 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.36 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.36 (3).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.36.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.37.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.38.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.39 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.39.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.40.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.41 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.41 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.41 (3).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.41.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.42.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.43 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.43 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.43 (3).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.43 (4).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.10.43.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.09.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.11 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.11 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.11.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.12 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.12 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.12 (3).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.12.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.13 (1).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.13 (2).jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.13.jpeg',
+                        'WhatsApp Image 2026-05-20 at 20.13.14.jpeg'
+                    ]
+                },
+                {
+                    base: './assets/campanhas_realizadas/dhl_contra_fome/',
+                    year: '2026',
+                    campaign: 'DHL Contra a Fome',
+                    category: 'dhl-contra-fome',
+                    captionPrefix: 'Entrega e arrecadação de alimentos da campanha DHL Contra a Fome',
+                    numbered: true,
+                    files: ['foto1.jpeg', 'foto2.jpeg', 'foto3.jpeg', 'foto4.jpeg']
+                },
+                {
+                    base: './assets/campanhas_realizadas/diaDasCriancas2024/',
+                    year: '2024',
+                    campaign: 'Dia das Crianças 2024',
+                    category: 'dia-das-criancas-2024',
+                    captionPrefix: 'Celebração do Dia das Crianças 2024 com a Associação Criança Mais Feliz',
+                    numbered: true,
+                    files: ['entrega.jpeg', 'entrega2.jpeg', 'entrega3.jpeg', 'entrega4.jpeg', 'entrega5.jpeg']
+                },
+                {
+                    base: './assets/campanhas_realizadas/diadascrianças2025/',
+                    year: '2025',
+                    campaign: 'Dia das Crianças 2025',
+                    category: 'dia-das-criancas-2025',
+                    captionPrefix: 'Celebração do Dia das Crianças 2025 com presentes e atividades para as crianças',
+                    numbered: true,
+                    files: ['foto1.jpeg', 'foto2.jpeg', 'foto3.jpeg', 'foto4.jpeg', 'foto5.jpeg', 'foto6.jpeg', 'foto7.jpeg', 'foto8.jpeg']
+                },
+                {
+                    base: './assets/campanhas_realizadas/inverno2025/',
+                    year: '2025',
+                    campaign: 'Inverno Solidário 2025',
+                    category: 'inverno-solidario-2025',
+                    captionPrefix: 'Entrega de roupas e cobertores na campanha Inverno Solidário 2025',
+                    numbered: true,
+                    files: [
+                        '361d21d1-40c2-4591-a07f-bb97e7784ff6.jpg',
+                        '597a7ab6-2b3d-4c57-9dc6-1e8a7aaa84d2.jpg',
+                        'a393623d-7a6d-4b63-959c-d6449f8de523.jpg',
+                        'a0799209-9286-4101-81de-7265c8c5a0a5.jpg',
+                        'afdc6a56-9597-4a3d-9b96-40fe58140d83.jpg',
+                        'b3c876bc-d5c2-4506-bdcb-50c44fae02fd.jpg',
+                        'b381ddf2-1dc6-428b-a0cf-0bcf773a5bc3.jpg',
+                        'c973a66e-00ad-4481-b31a-50eed67f452e.jpg',
+                        'e04bd9d5-dc4e-4807-ae19-489e55b1d70c.jpg',
+                        'fca65037-cf55-4986-9aca-95f471c25ef8.jpg'
+                    ]
+                },
+                {
+                    base: './assets/campanhas_realizadas/mc_dia_feliz/',
+                    year: '2025',
+                    campaign: 'MC Dia Feliz',
+                    category: 'mc-dia-feliz',
+                    captionPrefix: 'Momento de alegria e convivência na campanha MC Dia Feliz',
+                    numbered: true,
+                    files: ['entrega1.jpg', 'entrega2.jpg', 'entrega3.jpg', 'entrega4.jpg', 'entrega5.jpg', 'entrega6.jpg']
+                },
+                {
+                    base: './assets/campanhas_realizadas/motoclub_contra_fome/',
+                    year: '2025',
+                    campaign: 'Motoclub Contra a Fome',
+                    category: 'motoclub-contra-fome',
+                    captionPrefix: 'Arrecadação e entrega de alimentos na campanha Motoclub Contra a Fome',
+                    numbered: true,
+                    files: ['1.jpg', '2.jpg', '3.jpg', '4.jpg']
+                },
+                {
+                    base: './assets/campanhas_realizadas/natal2024/',
+                    year: '2024',
+                    campaign: 'Natal Solidário 2024',
+                    category: 'natal-solidario-2024',
+                    captionPrefix: 'Celebração do Natal Solidário 2024 com crianças e famílias atendidas',
+                    numbered: true,
+                    files: [
+                        'entrega.jpeg',
+                        'entrega2.jpeg',
+                        'entrega3.jpeg',
+                        'entrega4.jpeg',
+                        'entrega5.jpeg',
+                        'papai_noel_criancas_acf_2.jfif',
+                        'papai_noel_criancas_acf_3.jfif',
+                        'papai_noel_criancas_acf_4.jfif',
+                        'papai_noel_criancas_acf_6.jfif',
+                        'papai_noel_criancas_acf.jfif',
+                        'papai_noel_criancas_acf5.jfif'
+                    ]
+                },
+                {
+                    base: './assets/campanhas_realizadas/pascoa2025/',
+                    year: '2025',
+                    campaign: 'Páscoa Solidária 2025',
+                    category: 'pascoa-solidaria-2025',
+                    captionPrefix: 'Distribuição de chocolates e momentos de carinho na Páscoa Solidária 2025',
+                    numbered: true,
+                    files: [
+                        '64b63c31-f21e-4ade-9d18-229e9bce9088.jpg',
+                        'crianças-acf.jpeg',
+                        'crianças-acf2.jpeg',
+                        'crianças-acf3.jpeg',
+                        'crianças-acf4.jpeg',
+                        'WhatsApp Image 2025-04-22 at 09.00.02 (2).jpeg',
+                        'WhatsApp Image 2025-04-22 at 09.01.52.jpeg',
+                        'WhatsApp Image 2025-04-22 at 09.01.53.jpeg'
+                    ]
+                },
+                {
+                    base: './assets/campanhas_realizadas/pascoa2026/',
+                    year: '2026',
+                    campaign: 'Páscoa Solidária 2026',
+                    category: 'pascoa-solidaria-2026',
+                    captionPrefix: 'Entrega de chocolates e celebração da Páscoa Solidária 2026',
+                    numbered: true,
+                    files: [
+                        'pascoaCriancaMaisFeliz1.jpeg',
+                        'pascoaCriancaMaisFeliz2.jpeg',
+                        'pascoaCriancaMaisFeliz3.jpeg',
+                        'pascoaCriancaMaisFeliz4.jpeg',
+                        'pascoaCriancaMaisFeliz5.jpeg',
+                        'pascoaCriancaMaisFeliz6.jpeg',
+                        'pascoaCriancaMaisFeliz7.jpeg',
+                        'pascoaCriancaMaisFeliz8.jpeg',
+                        'pascoaCriancaMaisFeliz9.jpeg',
+                        'pascoaCriancaMaisFeliz10.jpeg',
+                        'pascoaCriancaMaisFeliz11.jpeg',
+                        'pascoaCriancaMaisFeliz12.jpeg'
+                    ]
+                },
+                {
+                    base: './assets/natal_2025/',
+                    year: '2025',
+                    campaign: 'Natal Solidário 2025',
+                    category: 'natal-solidario-2025',
+                    captionPrefix: 'Celebração do Natal Solidário 2025 com entrega de presentes e muita alegria',
+                    numbered: true,
+                    files: [
+                        'foto_acf1.jpeg',
+                        'foto_acf2.jpeg',
+                        'foto_acf3.jpeg',
+                        'foto_acf4.jpeg',
+                        'foto_acf5.jpeg',
+                        'foto_acf6.jpeg',
+                        'foto_acf7.jpeg',
+                        'foto_acf8.jpeg',
+                        'foto_acf9.jpeg',
+                        'foto_acf10.jpeg',
+                        'foto_acf11.jpeg',
+                        'foto_acf12.jpeg',
+                        'foto_acf13.jpeg'
+                    ]
+                },
+                {
+                    base: './assets/Programa-estagio/',
+                    year: '2025',
+                    campaign: 'Programa de Estágio',
+                    category: 'programa-estagio',
+                    captionPrefix: 'Registro do Programa de Estágio da Associação Criança Mais Feliz',
+                    numbered: true,
+                    files: ['estagio.jpg', 'estagio2.jpg', 'estagio3.jpg', 'estagio4.jpg']
+                }
+            ];
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./acf-modern.js?v=1.0.5"></script>
+    </body>
+</html>
