@@ -5,16 +5,26 @@
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    initializeTheme();
-    initializeNavigation();
-    initializeScrollEffects();
-    initializeTabs();
-    initializeModals();
-    initializeForm();
-    initializeAnimations();
-    initializeImageLoading();
-    initializeGallery();
+    [
+        initializeTheme,
+        initializeNavigation,
+        initializeScrollEffects,
+        initializeTabs,
+        initializeModals,
+        initializeForm,
+        initializeGallery,
+        initializeAnimations,
+        initializeImageLoading
+    ].forEach(runInitializer);
 });
+
+function runInitializer(initializer) {
+    try {
+        initializer();
+    } catch (error) {
+        console.warn(`Could not initialize ${initializer.name}:`, error);
+    }
+}
 
 /* =====================================================
    THEME MANAGEMENT
@@ -25,7 +35,7 @@ function initializeTheme() {
     const htmlElement = document.documentElement;
     
     // Get saved theme or default to light mode
-    const savedTheme = localStorage.getItem('acf-theme');
+    const savedTheme = getStorageValue('acf-theme');
     const initialTheme = savedTheme || 'light'; // Default to light mode
     
     // Set initial theme
@@ -37,7 +47,7 @@ function initializeTheme() {
             const currentTheme = htmlElement.getAttribute('data-theme') || 'light';
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
             setTheme(newTheme);
-            localStorage.setItem('acf-theme', newTheme);
+            setStorageValue('acf-theme', newTheme);
             
             // Announce theme change for screen readers
             announceToScreenReader(`Tema alterado para ${newTheme === 'dark' ? 'escuro' : 'claro'}`);
@@ -46,7 +56,7 @@ function initializeTheme() {
     
     // Listen for system theme changes (only apply if user hasn't set a preference)
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('acf-theme')) {
+        if (!getStorageValue('acf-theme')) {
             // Even if system changes, keep light as default
             setTheme('light');
         }
@@ -226,18 +236,20 @@ function initializeGallery() {
     let activePhotos = [];
     let activeIndex = 0;
 
-    const photos = galleryGroups.flatMap(group => {
-        return group.files.map((file, index) => {
+    const photos = [];
+
+    galleryGroups.forEach(group => {
+        group.files.forEach((file, index) => {
             const caption = group.captionPrefix + (group.numbered ? ` - foto ${index + 1}` : '');
 
-            return {
+            photos.push({
                 src: group.base + file,
                 alt: caption,
                 caption,
                 year: group.year,
                 campaign: group.campaign,
                 category: group.category
-            };
+            });
         });
     });
 
@@ -257,7 +269,7 @@ function initializeGallery() {
         galleryGrid.innerHTML = activePhotos.map((photo, index) => `
             <article class="gallery-card" data-gallery-index="${index}" tabindex="0">
                 <div class="gallery-card__image-wrap">
-                    <img src="${photo.src}" alt="${photo.alt}" loading="lazy" class="gallery-card__image">
+                    <img src="${photo.src}" alt="${photo.alt}" loading="lazy" decoding="async" class="gallery-card__image">
                 </div>
                 <div class="gallery-card__content">
                     <span class="gallery-card__tag">${photo.year} · ${photo.campaign}</span>
@@ -1017,29 +1029,74 @@ function getCampaignData(campaignId) {
                 <div class="campaign-modal__content">
                     <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/Capa.png" alt="Inverno Solidário 2026" class="campaign-modal__image">
                     <div class="campaign-modal__info">
-                        <h3>Inverno Solidário 2026 - Kit de Proteção para Nossas Crianças ❄️</h3>
-                        <p>Campanha ativa de arrecadação de itens essenciais para proteger nossas crianças durante o período de frio. Cada doação garante conforto e segurança para os pequenos da comunidade.</p>
+                        <h3>Inverno Solidário 2026 - Entregas Iniciadas ❄️</h3>
+                        <p>A campanha segue ativa até 31/07/2026. As primeiras entregas de inverno já começaram e agasalhos foram entregues para as crianças atendidas pela ACF. Agora precisamos reforçar a arrecadação de toucas, meias, calçados e cobertores para completar a proteção contra o frio.</p>
                         
+                        <div class="campaign-modal__section">
+                            <h4><i class="fas fa-hand-holding-heart"></i> Entregas Iniciadas</h4>
+                            <p>Com o apoio de doadores e voluntários, já iniciamos as entregas de inverno e conseguimos levar agasalhos para as crianças. A campanha continua porque ainda faltam itens essenciais para enfrentar os dias mais frios com segurança e dignidade.</p>
+                            <div class="campaign-modal__gallery-grid" aria-label="Fotos do início das entregas do Inverno Solidário 2026">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 1">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (1).jpeg" alt="Início das entregas do Inverno Solidário 2026 com agasalhos para crianças atendidas pela ACF - foto 1" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (2).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 2">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (2).jpeg" alt="Entrega de agasalhos da campanha Inverno Solidário 2026 para crianças atendidas pela ACF - foto 2" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 3">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27.jpeg" alt="Registro das primeiras entregas de agasalhos do Inverno Solidário 2026 - foto 3" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.28.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 4">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.28.jpeg" alt="Ação de entrega de agasalhos do Inverno Solidário 2026 em Jundiaí - foto 4" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 5">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29 (1).jpeg" alt="Voluntários e famílias durante o início das entregas do Inverno Solidário 2026 - foto 5" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 6">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29.jpeg" alt="Entrega de agasalhos para proteção no inverno pela Associação Criança Mais Feliz - foto 6" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 7">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (1).jpeg" alt="Crianças recebendo apoio da campanha Inverno Solidário 2026 - foto 7" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (2).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 8">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (2).jpeg" alt="Registro da entrega de itens de inverno da campanha Inverno Solidário 2026 - foto 8" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 9">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30.jpeg" alt="Primeiras entregas de agasalhos para crianças na campanha Inverno Solidário 2026 - foto 9" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 10">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (1).jpeg" alt="Doações de inverno sendo entregues pela Associação Criança Mais Feliz - foto 10" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (2).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 11">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (2).jpeg" alt="Apoio de inverno para crianças atendidas pela ACF durante as primeiras entregas - foto 11" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 12">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31.jpeg" alt="Registro solidário das entregas de agasalhos do Inverno Solidário 2026 - foto 12" loading="lazy" decoding="async">
+                                </button>
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.32.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 13">
+                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.32.jpeg" alt="Entrega de agasalhos e cuidado com crianças no Inverno Solidário 2026 - foto 13" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+
                         <div class="campaign-modal__info-active">
-                            <h4><i class="fas fa-snowflake"></i> O Que Contém o Kit de Inverno?</h4>
-                            <p>Cada kit de inverno inclui itens cuidadosamente selecionados para proporcionar proteção completa:</p>
+                            <h4><i class="fas fa-snowflake"></i> O Que Ainda Precisamos Arrecadar?</h4>
+                            <p>Neste momento, a prioridade é completar a proteção das crianças com itens essenciais para o frio:</p>
                             <ul>
-                                <li>🛏️ <strong>Coberta:</strong> Proteção contra o frio durante o dia e à noite</li>
-                                <li>🧥 <strong>Agasalho:</strong> Casaco ou suéter de qualidade para manter o calor</li>
+                                <li>🧥 <strong>Agasalhos:</strong> As primeiras peças já foram entregues, mas novas doações continuam ajudando mais crianças</li>
                                 <li>🧦 <strong>Meias:</strong> Meias quentes para proteger os pequenos pés</li>
                                 <li>🎩 <strong>Touca/Gorro:</strong> Proteção para a cabeça e orelhas do frio</li>
-                                <li>🧴 <strong>Kit Higiene:</strong> Sabonete, shampoo e itens de higiene pessoal</li>
-                                <li>🍎 <strong>Alimentação Especial:</strong> Itens nutritivos e especiais para fortalecer a imunidade</li>
+                                <li>👟 <strong>Calçados:</strong> Sapatos fechados e em bom estado para enfrentar o frio com segurança</li>
+                                <li>🛏️ <strong>Cobertores:</strong> Proteção durante o dia e à noite</li>
                             </ul>
                             
                             <p><strong>❓ Por Que Essas Crianças Precisam?</strong></p>
-                            <p>As crianças atendidas pela Associação Criança Mais Feliz vivem em situação de vulnerabilidade social. Durante o inverno, o risco de doenças respiratórias e hypothermia aumenta. Este kit é essencial para garantir sua saúde, conforto e segurança nos meses mais frios do ano.</p>
+                            <p>As crianças atendidas pela Associação Criança Mais Feliz vivem em situação de vulnerabilidade social. Durante o inverno, o risco de doenças respiratórias e hipotermia aumenta. Esses itens são essenciais para garantir saúde, conforto e segurança nos meses mais frios do ano.</p>
                             
                             <h4><i class="fas fa-heart"></i> Como Você Pode Ajudar</h4>
                             <ul>
-                                <li>🛍️ <strong>Doação de Itens Novos:</strong> Contribua com qualquer item do kit (coberta, agasalho, meia, touca, etc.)</li>
+                                <li>🛍️ <strong>Doação de Itens:</strong> Contribua com agasalhos, toucas, meias, calçados e cobertores em bom estado</li>
                                 <li>💰 <strong>Doação Financeira via PIX:</strong> Contribua em dinheiro para comprarmos os itens necessários</li>
-                                <li>🤝 <strong>Apadrinhamento:</strong> Adote uma criança e forneça um kit completo</li>
+                                <li>🤝 <strong>Apadrinhamento:</strong> Adote uma criança e ajude a completar sua proteção de inverno</li>
                                 <li>🏢 <strong>Parceria Corporativa:</strong> Sua empresa pode fazer uma doação em massa</li>
                             </ul>
                             
@@ -1053,10 +1110,10 @@ function getCampaignData(campaignId) {
                             <div class="campaign-modal__stats">
                                 <h4>📊 Meta da Campanha de Inverno 2026:</h4>
                                 <ul>
-                                    <li>🎯 <strong>Crianças a Atender:</strong> 50 crianças</li>
-                                    <li>🎁 <strong>Kits Completos Necessários:</strong> 50 kits</li>
-                                    <li>✅ <strong>Kits Arrecadados:</strong> 15 kits (em andamento)</li>
-                                    <li>⏳ <strong>Faltam:</strong> 35 kits</li>
+                                    <li>🎯 <strong>Status:</strong> Campanha ativa com entregas iniciadas</li>
+                                    <li>📈 <strong>Progresso:</strong> 50% da meta atingida</li>
+                                    <li>📅 <strong>Prazo:</strong> Doações até 31/07/2026</li>
+                                    <li>⏳ <strong>Foco atual:</strong> Toucas, meias, calçados e cobertores</li>
                                 </ul>
                             </div>
                             
@@ -1068,7 +1125,6 @@ function getCampaignData(campaignId) {
                                     <li>😊 Traz conforto e segurança</li>
                                     <li>🏥 Reduz o risco de doenças respiratórias</li>
                                     <li>📚 Permite que a criança compareça à escola sem faltar por frio</li>
-                                    <li>💪 Fortalece a imunidade com alimentação especial</li>
                                     <li>❤️ Demonstra amor e cuidado genuíno</li>
                                 </ul>
                             </div>
@@ -1088,7 +1144,7 @@ function getCampaignData(campaignId) {
                         </div>
                         
                         <div class="campaign-modal__urgency">
-                            <p class="urgency-message">❄️ <strong>CAMPANHA ATIVA!</strong> O inverno chegará em breve. Ajude-nos a proteger nossas crianças do frio com kits de proteção completos. Sua solidariedade faz diferença!</p>
+                            <p class="urgency-message">❄️ <strong>CAMPANHA ATIVA!</strong> As entregas já começaram, mas ainda precisamos de toucas, meias, calçados e cobertores para proteger mais crianças até 31/07/2026. Sua solidariedade faz diferença!</p>
                         </div>
                     </div>
                 </div>
@@ -1349,36 +1405,42 @@ function initializeAnimations() {
     
     // Progress bar animation
     const progressBars = document.querySelectorAll('.progress__bar');
-    const progressObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const progressBar = entry.target;
-                const width = progressBar.style.width;
-                progressBar.style.width = '0%';
-                setTimeout(() => {
-                    progressBar.style.width = width;
-                }, 100);
-            }
+    if ('IntersectionObserver' in window) {
+        const progressObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBar = entry.target;
+                    const width = progressBar.style.width;
+                    progressBar.style.width = '0%';
+                    setTimeout(() => {
+                        progressBar.style.width = width;
+                    }, 100);
+                }
+            });
         });
-    });
-    
-    progressBars.forEach(bar => {
-        progressObserver.observe(bar);
-    });
+
+        progressBars.forEach(bar => {
+            progressObserver.observe(bar);
+        });
+    }
     
     // Counter animation
     const counters = document.querySelectorAll('.stat__number');
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounter(entry.target);
-            }
+    if ('IntersectionObserver' in window) {
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                }
+            });
         });
-    });
-    
-    counters.forEach(counter => {
-        counterObserver.observe(counter);
-    });
+
+        counters.forEach(counter => {
+            counterObserver.observe(counter);
+        });
+    } else {
+        counters.forEach(animateCounter);
+    }
 }
 
 function animateCounter(element) {
@@ -1465,6 +1527,23 @@ function setQueryParam(param, value) {
 }
 
 // Local storage helpers
+function getStorageValue(key) {
+    try {
+        return localStorage.getItem(key);
+    } catch (error) {
+        console.warn('Could not read from localStorage:', error);
+        return null;
+    }
+}
+
+function setStorageValue(key, value) {
+    try {
+        localStorage.setItem(key, value);
+    } catch (error) {
+        console.warn('Could not save to localStorage:', error);
+    }
+}
+
 function saveToStorage(key, data) {
     try {
         localStorage.setItem(key, JSON.stringify(data));
