@@ -106,24 +106,41 @@ function initializeNavigation() {
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav__link');
 
+    function setMobileMenuState(isOpen) {
+        if (!navMenu) return;
+
+        navMenu.classList.toggle('show', isOpen);
+
+        if (navToggle) {
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+        }
+    }
+
     // Mobile menu toggle
     if (navToggle) {
         navToggle.addEventListener('click', () => {
-            navMenu.classList.add('show');
+            setMobileMenuState(true);
         });
     }
 
     if (navClose) {
         navClose.addEventListener('click', () => {
-            navMenu.classList.remove('show');
+            setMobileMenuState(false);
         });
     }
 
     // Close menu when clicking on nav link
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.classList.remove('show');
+            setMobileMenuState(false);
         });
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navMenu && navMenu.classList.contains('show')) {
+            setMobileMenuState(false);
+            navToggle?.focus();
+        }
     });
 
     // Header scroll effect
@@ -163,6 +180,19 @@ function initializeNavigation() {
 
 function initializeScrollEffects() {
     const backToTop = document.getElementById('back-to-top');
+    const whatsappFloat = document.querySelector('.whatsapp-float');
+    const hero = document.querySelector('.hero');
+
+    function updateFloatingActions() {
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        const showWhatsapp = !isMobile || !hero || window.scrollY > hero.offsetHeight * 0.75;
+
+        whatsappFloat?.classList.toggle('show', showWhatsapp);
+    }
+
+    updateFloatingActions();
+    window.addEventListener('scroll', updateFloatingActions);
+    window.addEventListener('resize', updateFloatingActions);
 
     // Back to top button
     if (backToTop) {
