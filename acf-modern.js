@@ -1057,124 +1057,99 @@ function getCampaignData(campaignId) {
             title: 'Inverno Solidário 2026',
             content: `
                 <div class="campaign-modal__content">
-                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/Capa.png" alt="Inverno Solidário 2026" class="campaign-modal__image">
+                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/Capa.png" alt="Inverno Solidário 2026" class="campaign-modal__image">
                     <div class="campaign-modal__info">
-                        <h3>Inverno Solidário 2026 - Entregas Iniciadas ❄️</h3>
-                        <p>A campanha segue ativa até 31/07/2026. As primeiras entregas de inverno já começaram e agasalhos foram entregues para as crianças atendidas pela ACF. Agora precisamos reforçar a arrecadação de toucas, meias, calçados e cobertores para completar a proteção contra o frio.</p>
+                        <h3>Inverno Solidário 2026 - Campanha Finalizada ❄️</h3>
+                        <p>Finalizamos a Campanha de Inverno 2026 com muita gratidão. As doações recebidas foram entregues às crianças e famílias atendidas pela ACF, levando mais proteção, cuidado e dignidade durante os dias frios.</p>
                         
                         <div class="campaign-modal__section">
-                            <h4><i class="fas fa-hand-holding-heart"></i> Entregas Iniciadas</h4>
-                            <p>Com o apoio de doadores e voluntários, já iniciamos as entregas de inverno e conseguimos levar agasalhos para as crianças. A campanha continua porque ainda faltam itens essenciais para enfrentar os dias mais frios com segurança e dignidade.</p>
+                            <h4><i class="fas fa-hand-holding-heart"></i> Entregas Realizadas</h4>
+                            <p>Com o apoio de doadores, voluntários, Fundo Social e demais parceiros, conseguimos transformar as doações em acolhimento para quem mais precisava. Nosso muito obrigado a todos que participaram dessa corrente de solidariedade.</p>
                             <div class="campaign-modal__gallery-grid" aria-label="Fotos do início das entregas do Inverno Solidário 2026">
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 1">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (1).jpeg" alt="Início das entregas do Inverno Solidário 2026 com agasalhos para crianças atendidas pela ACF - foto 1" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 1">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (1).jpeg" alt="Início das entregas do Inverno Solidário 2026 com agasalhos para crianças atendidas pela ACF - foto 1" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (2).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 2">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (2).jpeg" alt="Entrega de agasalhos da campanha Inverno Solidário 2026 para crianças atendidas pela ACF - foto 2" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (2).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 2">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27 (2).jpeg" alt="Entrega de agasalhos da campanha Inverno Solidário 2026 para crianças atendidas pela ACF - foto 2" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 3">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27.jpeg" alt="Registro das primeiras entregas de agasalhos do Inverno Solidário 2026 - foto 3" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 3">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.27.jpeg" alt="Registro das primeiras entregas de agasalhos do Inverno Solidário 2026 - foto 3" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.28.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 4">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.28.jpeg" alt="Ação de entrega de agasalhos do Inverno Solidário 2026 em Jundiaí - foto 4" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.28.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 4">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.28.jpeg" alt="Ação de entrega de agasalhos do Inverno Solidário 2026 em Jundiaí - foto 4" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 5">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29 (1).jpeg" alt="Voluntários e famílias durante o início das entregas do Inverno Solidário 2026 - foto 5" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 5">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29 (1).jpeg" alt="Voluntários e famílias durante o início das entregas do Inverno Solidário 2026 - foto 5" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 6">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29.jpeg" alt="Entrega de agasalhos para proteção no inverno pela Associação Criança Mais Feliz - foto 6" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 6">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.29.jpeg" alt="Entrega de agasalhos para proteção no inverno pela Associação Criança Mais Feliz - foto 6" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 7">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (1).jpeg" alt="Crianças recebendo apoio da campanha Inverno Solidário 2026 - foto 7" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 7">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (1).jpeg" alt="Crianças recebendo apoio da campanha Inverno Solidário 2026 - foto 7" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (2).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 8">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (2).jpeg" alt="Registro da entrega de itens de inverno da campanha Inverno Solidário 2026 - foto 8" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (2).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 8">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30 (2).jpeg" alt="Registro da entrega de itens de inverno da campanha Inverno Solidário 2026 - foto 8" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 9">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30.jpeg" alt="Primeiras entregas de agasalhos para crianças na campanha Inverno Solidário 2026 - foto 9" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 9">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.30.jpeg" alt="Primeiras entregas de agasalhos para crianças na campanha Inverno Solidário 2026 - foto 9" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 10">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (1).jpeg" alt="Doações de inverno sendo entregues pela Associação Criança Mais Feliz - foto 10" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (1).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 10">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (1).jpeg" alt="Doações de inverno sendo entregues pela Associação Criança Mais Feliz - foto 10" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (2).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 11">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (2).jpeg" alt="Apoio de inverno para crianças atendidas pela ACF durante as primeiras entregas - foto 11" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (2).jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 11">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31 (2).jpeg" alt="Apoio de inverno para crianças atendidas pela ACF durante as primeiras entregas - foto 11" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 12">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31.jpeg" alt="Registro solidário das entregas de agasalhos do Inverno Solidário 2026 - foto 12" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 12">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.31.jpeg" alt="Registro solidário das entregas de agasalhos do Inverno Solidário 2026 - foto 12" loading="lazy" decoding="async">
                                 </button>
-                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.32.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 13">
-                                    <img src="./assets/CAMPANHA_ATIVA/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.32.jpeg" alt="Entrega de agasalhos e cuidado com crianças no Inverno Solidário 2026 - foto 13" loading="lazy" decoding="async">
+                                <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.32.jpeg')" aria-label="Ampliar foto do início das entregas do Inverno Solidário 2026 - foto 13">
+                                    <img src="./assets/campanhas_realizadas/Inverno solidario 2026/inicio de entrega/WhatsApp Image 2026-06-08 at 11.34.32.jpeg" alt="Entrega de agasalhos e cuidado com crianças no Inverno Solidário 2026 - foto 13" loading="lazy" decoding="async">
                                 </button>
+                            </div>
+                            <div class="campaign-modal__gallery-grid" aria-label="Fotos da campanha finalizada Inverno Solidário 2026">
+                                ${Array.from({ length: 21 }, (_, index) => index + 2).map((photoNumber) => `
+                                    <button class="campaign-modal__photo" type="button" onclick="openImageModal('./assets/campanhas_realizadas/Inverno solidario 2026/${photoNumber}.png')" aria-label="Ampliar foto da campanha finalizada Inverno Solidário 2026 - foto ${photoNumber}">
+                                        <img src="./assets/campanhas_realizadas/Inverno solidario 2026/${photoNumber}.png" alt="Registro da campanha finalizada Inverno Solidário 2026 - foto ${photoNumber}" loading="lazy" decoding="async">
+                                    </button>
+                                `).join('')}
                             </div>
                         </div>
 
                         <div class="campaign-modal__info-active">
-                            <h4><i class="fas fa-snowflake"></i> O Que Ainda Precisamos Arrecadar?</h4>
-                            <p>Neste momento, a prioridade é completar a proteção das crianças com itens essenciais para o frio:</p>
+                            <h4><i class="fas fa-snowflake"></i> Campanha Finalizada</h4>
+                            <p>A campanha de inverno foi concluída com sucesso graças à união de pessoas, empresas e instituições que acreditam no cuidado com nossas crianças.</p>
                             <ul>
-                                <li>🧥 <strong>Agasalhos:</strong> As primeiras peças já foram entregues, mas novas doações continuam ajudando mais crianças</li>
-                                <li>🧦 <strong>Meias:</strong> Meias quentes para proteger os pequenos pés</li>
-                                <li>🎩 <strong>Touca/Gorro:</strong> Proteção para a cabeça e orelhas do frio</li>
-                                <li>👟 <strong>Calçados:</strong> Sapatos fechados e em bom estado para enfrentar o frio com segurança</li>
-                                <li>🛏️ <strong>Cobertores:</strong> Proteção durante o dia e à noite</li>
+                                <li>🧥 Agasalhos e itens de inverno entregues</li>
+                                <li>🤝 Crianças e famílias acolhidas pela rede de solidariedade</li>
+                                <li>💙 Doações convertidas em proteção, conforto e dignidade</li>
                             </ul>
                             
-                            <p><strong>❓ Por Que Essas Crianças Precisam?</strong></p>
-                            <p>As crianças atendidas pela Associação Criança Mais Feliz vivem em situação de vulnerabilidade social. Durante o inverno, o risco de doenças respiratórias e hipotermia aumenta. Esses itens são essenciais para garantir saúde, conforto e segurança nos meses mais frios do ano.</p>
-                            
-                            <h4><i class="fas fa-heart"></i> Como Você Pode Ajudar</h4>
-                            <ul>
-                                <li>🛍️ <strong>Doação de Itens:</strong> Contribua com agasalhos, toucas, meias, calçados e cobertores em bom estado</li>
-                                <li>💰 <strong>Doação Financeira via PIX:</strong> Contribua em dinheiro para comprarmos os itens necessários</li>
-                                <li>🤝 <strong>Apadrinhamento:</strong> Adote uma criança e ajude a completar sua proteção de inverno</li>
-                                <li>🏢 <strong>Parceria Corporativa:</strong> Sua empresa pode fazer uma doação em massa</li>
-                            </ul>
-                            
-                            <p><strong>📍 Onde Entregar:</strong></p>
-                            <ul>
-                                <li>🏠 <strong>Sede da ACF:</strong> R. Profa. Hilda Marques, 52 - Vila Cristo Redentor, Jundiaí-SP</li>
-                                <li>📱 <strong>WhatsApp:</strong> Agende a entrega ou coleta dos itens doados</li>
-                                <li>⏰ <strong>Horários:</strong> Segunda a Sexta (8h-17h) | Sábado (8h-12h)</li>
-                            </ul>
+                            <h4><i class="fas fa-heart"></i> Agradecimento Especial</h4>
+                            <p>A Associação Criança Mais Feliz agradece ao Fundo Social e a todos os parceiros, doadores e voluntários pelas doações e pelo apoio durante a Campanha de Inverno 2026. Cada contribuição fez diferença na vida das crianças atendidas.</p>
                             
                             <div class="campaign-modal__stats">
-                                <h4>📊 Meta da Campanha de Inverno 2026:</h4>
+                                <h4>📊 Resultado da Campanha de Inverno 2026:</h4>
                                 <ul>
-                                    <li>🎯 <strong>Status:</strong> Campanha ativa com entregas iniciadas</li>
-                                    <li>📈 <strong>Progresso:</strong> 50% da meta atingida</li>
-                                    <li>📅 <strong>Prazo:</strong> Doações até 31/07/2026</li>
-                                    <li>⏳ <strong>Foco atual:</strong> Toucas, meias, calçados e cobertores</li>
+                                    <li>✅ <strong>Status:</strong> Campanha finalizada</li>
+                                    <li>📦 <strong>Doações:</strong> Itens de inverno arrecadados e distribuídos</li>
+                                    <li>🤝 <strong>Apoio:</strong> Fundo Social, parceiros, doadores e voluntários</li>
+                                    <li>💝 <strong>Impacto:</strong> Mais cuidado e proteção para as crianças no inverno</li>
                                 </ul>
                             </div>
                             
                             <div class="campaign-modal__impact">
-                                <h4>💝 Seu Impacto - O Que Uma Doação Significa:</h4>
-                                <p>Ao contribuir com o Inverno Solidário, você:</p>
+                                <h4>💝 O Que Essa Rede Tornou Possível:</h4>
+                                <p>Com cada doação, conseguimos:</p>
                                 <ul>
-                                    <li>❄️ Protege uma criança do frio intenso</li>
-                                    <li>😊 Traz conforto e segurança</li>
-                                    <li>🏥 Reduz o risco de doenças respiratórias</li>
-                                    <li>📚 Permite que a criança compareça à escola sem faltar por frio</li>
-                                    <li>❤️ Demonstra amor e cuidado genuíno</li>
+                                    <li>❄️ Proteger crianças durante os dias frios</li>
+                                    <li>😊 Levar conforto e segurança às famílias</li>
+                                    <li>❤️ Demonstrar cuidado, presença e solidariedade</li>
                                 </ul>
-                            </div>
-                            
-                            <div class="campaign-modal__pix">
-                                <h4>💰 Doação via PIX:</h4>
-                                <p><strong>CNPJ:</strong> 34.863.177/0001-33</p>
-                                <p><strong>Razão Social:</strong> Associação Criança Mais Feliz</p>
-                                <p>Sua doação em dinheiro nos permite comprar itens de qualidade e distribuir kits completos para todas as crianças. Muito obrigado!</p>
-                            </div>
-                            
-                            <div class="campaign-modal__contact">
-                                <a href="https://api.whatsapp.com/send/?phone=5511918596727&text=Quero+participar+da+campanha+Inverno+Solidário+2026" target="_blank" class="btn btn--primary">
-                                    <i class="fab fa-whatsapp"></i> Entrar em Contato
-                                </a>
                             </div>
                         </div>
                         
                         <div class="campaign-modal__urgency">
-                            <p class="urgency-message">❄️ <strong>CAMPANHA ATIVA!</strong> As entregas já começaram, mas ainda precisamos de toucas, meias, calçados e cobertores para proteger mais crianças até 31/07/2026. Sua solidariedade faz diferença!</p>
+                            <p class="urgency-message">❄️ <strong>CAMPANHA FINALIZADA!</strong> Obrigado ao Fundo Social, aos parceiros e a todos que doaram. A solidariedade de vocês aqueceu o inverno de muitas crianças.</p>
                         </div>
                     </div>
                 </div>
